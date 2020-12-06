@@ -2,8 +2,8 @@ import React from "react";
 
 export default function About() {
   return (
-    <div>
-      <div className="about-text ml-3 mt-4">
+    <div className="page">
+      <div className="about-text ml-3 pt-3">
         <h3 className="header">About</h3>
 
         <p>

@@ -3,20 +3,20 @@ import Navigation from "./Navigation";
 import { BrowserRouter as Router } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
+import Contact from "./Contact";
+import Projects from "./Projects";
+import Qualifications from "./Qualifications";
 
 function App() {
   return (
     <Router>
       <div className="mt-3">
         <Navigation />
-        {/* <Switch> */}
-        {/* <Route path="/" exact={true}> */}
         <Home />
-        {/* </Route> */}
-        {/* <Route path="/" exact={true}> */}
         <About />
-        {/* </Route> */}
-        {/* </Switch> */}
+        <Projects />
+        <Qualifications />
+        <Contact />
       </div>
     </Router>
   );
