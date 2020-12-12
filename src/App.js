@@ -10,7 +10,7 @@ import Qualifications from "./Qualifications";
 function App() {
   return (
     <Router>
-      <div className="mt-3">
+      <div className="">
         <Navigation />
         <Home />
         <About />

@@ -2,12 +2,17 @@
 body {
   font-family: "Montserrat";
   background-color: #ded0b4;
+  text-align: center;
 }
 .header {
   font-size: 200%;
 }
 .page {
   height: 80vh;
+}
+
+.navigation {
+  background-color: #ded0b4;
 }
 /** END: General use */
 
@@ -41,7 +46,7 @@ body {
 }
 
 .default:hover {
-  font-size: 120%;
+  font-size: 130%;
   color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
 }
@@ -55,23 +60,22 @@ body {
   object-fit: cover;
   opacity: 0.7;
 }
-.black-overlay {
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-}
 .carousel {
   position: relative;
   background: black;
 }
 .profile-text {
+  color: white;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.profile-text-name {
+  font-size: 500%;
+}
+.profile-text-subtext {
+  font-size: 150%;
 }
 .profile-img {
   position: absolute;
@@ -86,7 +90,26 @@ body {
 /** BEGIN: About */
 .about-text {
   font-size: 130%;
-  width: 70%;
 }
 
 /**END: About */
+
+/** BEGIN: Projects */
+
+.project-icon {
+  width: 50%;
+}
+
+.logo {
+  position: relative;
+}
+.test {
+  background-color: black;
+}
+/* 
+.padding-0 {
+  padding-right: 0;
+  padding-left: 0;
+} */
+
+/**END: Projects */

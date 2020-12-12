@@ -9,7 +9,7 @@ import profile from "./assets/profile/IMG_0413.jpg";
 
 export default function Home() {
   return (
-    <div className="carousel mt-3">
+    <div className="carousel">
       <Carousel
         controls={false}
         indicators={false}
@@ -23,7 +23,12 @@ export default function Home() {
           <img className="slider-img" src={img3} alt="second" />
         </Carousel.Item>
       </Carousel>
-      {/* <div class="profile-text">Centered</div> */}
+      <div className="profile-text">
+        <div className="profile-text-name">Anthony Ghobind</div>
+        <div className="profile-text-subtext">
+          Software Engineer | Full Stack Web Developer
+        </div>
+      </div>
       <img class="profile-img" src={profile} alt="profile" />
     </div>
   );
