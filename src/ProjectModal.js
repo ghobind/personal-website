@@ -9,6 +9,7 @@ export default function ProjectModal({
   img,
   webLink,
   srcLink,
+  tags,
 }) {
   return createPortal(
     <>
@@ -23,29 +24,33 @@ export default function ProjectModal({
             <div className="modal-heading mb-3">{heading}</div>
             <div className="modal-text mb-3">{content}</div>
             <div className="modal-tags">
-              <i className="fas fa-tags"></i>
-              ReactJS / HTML / CSS
+              <i className="fas fa-tags"></i> {tags}
             </div>
           </div>
         </Modal.Body>
-        <Modal.Footer className="d-block text-left ml-3 pt-3 pb-3">
-          <a
-            className="footer-content"
-            href={webLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Website
-          </a>
-          <a
-            className="footer-content"
-            href={srcLink}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Source Code
-          </a>
-        </Modal.Footer>
+        {(webLink !== "None" || srcLink !== "None") && (
+          <Modal.Footer className="d-block text-left ml-3 pt-3 pb-3">
+            {webLink !== "None" && (
+              <a
+                className="footer-content"
+                href={webLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Website
+              </a>
+            )}
+
+            <a
+              className="footer-content"
+              href={srcLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Source Code
+            </a>
+          </Modal.Footer>
+        )}
       </Modal>
     </>,
     document.getElementById("modal-container")

@@ -46,7 +46,7 @@ body {
 }
 
 .default:hover {
-  font-size: 130%;
+  font-size: 120%;
   color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
 }
@@ -159,6 +159,9 @@ body {
   color: rgba(252, 122, 99, 0.877);
   text-decoration: none;
   transition: all 0.5s;
+}
+.close {
+  display: none;
 }
 
 /**END: Projects */
