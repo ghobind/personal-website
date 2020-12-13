@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import grocery from "./assets/projects/grocery.png";
 import sf_sim from "./assets/projects/sf_sim.png";
-import x8 from "./assets/projects/x8.png";
+import x8 from "./assets/projects/x8.jpeg";
 import ProjectModal from "./ProjectModal";
 
 export default function Projects() {
