@@ -16,7 +16,7 @@ export default function ProjectModal({
       <Modal show={true} onHide={onClose}>
         <Modal.Header closeButton>
           <Modal.Title>
-            <img className="modal-img" src={img} alt="modal image" />
+            <img className="modal-img" src={img} alt="modal pic" />
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
