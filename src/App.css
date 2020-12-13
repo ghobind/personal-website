@@ -134,4 +134,31 @@ body {
   background-color: black;
 }
 
+.modal-img {
+  width: 100%;
+}
+.modal-heading {
+  font-weight: bold;
+  text-align: left;
+}
+.modal-text {
+  text-align: left;
+  color: rgba(0, 0, 0, 0.5);
+}
+.modal-tags {
+  font-size: 80%;
+  color: #a1a1a1;
+  /* text-transform: uppercase; */
+  letter-spacing: 2px;
+  text-align: left;
+}
+.footer-content {
+  color: rgba(0, 0, 0, 0.5);
+}
+.footer-content:hover {
+  color: rgba(252, 122, 99, 0.877);
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
 /**END: Projects */

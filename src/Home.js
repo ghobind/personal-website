@@ -29,7 +29,7 @@ export default function Home() {
           Software Engineer | Full Stack Web Developer
         </div>
       </div>
-      <img class="profile-img" src={profile} alt="profile" />
+      <img className="profile-img" src={profile} alt="profile" />
     </div>
   );
 }
