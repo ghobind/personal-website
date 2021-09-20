@@ -1,7 +1,7 @@
 /** BEGIN: General use */
 body {
   font-family: "Montserrat";
-  background-color: #E3DBDB;
+  background-color: #e3dbdb;
   text-align: center;
   /* color: #FFFFFF; */
 }
@@ -13,7 +13,7 @@ body {
 }
 
 .navigation {
-  background-color: #E3DBDB;
+  background-color: #e3dbdb;
 }
 /** END: General use */
 
@@ -80,12 +80,12 @@ body {
   font-size: 200%;
 }
 .profile-text-left {
-  display:inline-block;
-  margin-right:10px;
+  display: inline-block;
+  margin-right: 10px;
 }
 .profile-text-right {
-  display:inline-block;
-  color: #C9D5B5
+  display: inline-block;
+  color: #c9d5b5;
 }
 .profile-img {
   position: absolute;

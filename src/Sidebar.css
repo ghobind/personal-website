@@ -1,105 +1,111 @@
 .outer-container {
-    position: fixed;
-    z-index: 99 !important; /* to make it always appear on top */
+  position: fixed;
+  z-index: 99 !important; /* to make it always appear on top */
 }
 .sidebar-container {
-    background-color: black;
-    width: 3.5rem;
-    height: 25rem;
-    margin-top:20vh;
-    border-radius: 0 30px 30px 0;
-    padding: 1rem 0;
+  background-color: black;
+  width: 3.5rem;
+  height: 25rem;
+  margin-top: 20vh;
+  border-radius: 0 30px 30px 0;
+  padding: 1rem 0;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 
-    position: relative;
+  position: relative;
 }
 
 .slick-bar {
-    color: white;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: black;
+  color: white;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
 
-    padding: 2rem 0;
+  padding: 2rem 0;
 
-    position:absolute;
-    top: 3rem;
-    left: 0;
+  position: absolute;
+  top: 3rem;
+  left: 0;
 
-    width: 3.5rem;
-    transition: all 0.5s ease;
-    border-radius: 0 30px 30px 0;
+  width: 3.5rem;
+  transition: all 0.5s ease;
+  border-radius: 0 30px 30px 0;
 }
 
 .slick-bar-active {
-    color: white;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: black;
+  color: white;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
 
-    padding: 2rem 0;
+  padding: 2rem 0;
 
-    position:absolute;
-    top: 3rem;
-    left: 0;
+  position: absolute;
+  top: 3rem;
+  left: 0;
 
-    width: 12.5rem;
-    transition: all 0.5s ease;
-    border-radius: 0 30px 30px 0;
+  width: 12.5rem;
+  transition: all 0.5s ease;
+  border-radius: 0 30px 30px 0;
 }
 
 .sidebar-item {
-    text-decoration: none;
-    color: white;
-    width: 100%;
-    padding: 1rem 0;
-    cursor: pointer;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  padding: 1rem 0;
+  cursor: pointer;
 
-    display: flex;
-    padding-left: 1rem;
+  display: flex;
+  padding-left: 1rem;
 }
 
 .sidebar-item:hover {
-    text-decoration: none;
-    color: white;
-    width: 100%;
-    padding: 1rem 0;
-    cursor: pointer;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  padding: 1rem 0;
+  cursor: pointer;
 
-    display: flex;
-    padding-left: 1rem;
-    
-    border-right: 4px solid white;
+  display: flex;
+  padding-left: 1rem;
+
+  border-right: 4px solid white;
+}
+.sidebar-item:hover .sidebar-img {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%)
+    contrast(103%);
 }
 .sidebar-img {
-    width: 1.2rem;
-    height: auto;
-    filter: invert(92%) sepia(4%) saturate(1033%) hue-rotate(169deg) brightness(78%) contrast(85%);
+  width: 1.2rem;
+  height: auto;
+  filter: invert(92%) sepia(4%) saturate(1033%) hue-rotate(169deg)
+    brightness(78%) contrast(85%);
 }
-.sidebar-img::hover{
-    filter:  invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
+.sidebar-img:hover {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%)
+    contrast(103%);
 }
 
 .sidebar-text {
-    text-decoration: none;
-    width: 0;
-    overflow:hidden;
-    margin-left: 0;
-    transition: all 0.3s ease;
+  text-decoration: none;
+  width: 0;
+  overflow: hidden;
+  margin-left: 0;
+  transition: all 0.3s ease;
 }
 
 .sidebar-text-active {
-    text-decoration: none;
-    width: 100%;
-    overflow:hidden;
-    margin-left: 1.5rem;
-    transition: all 0.3s ease;
+  text-decoration: none;
+  width: 100%;
+  overflow: hidden;
+  margin-left: 1.5rem;
+  transition: all 0.3s ease;
 }
