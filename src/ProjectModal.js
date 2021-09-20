@@ -15,14 +15,14 @@ export default function ProjectModal({
     <>
       <Modal show={true} onHide={onClose}>
         <Modal.Header closeButton>
-          <Modal.Title>
+          <Modal.Title className="modal-title">
             <img className="modal-img" src={img} alt="modal pic" />
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <div className="container ml-3">
+          <div className="container pl-3">
             <div className="modal-heading mb-3">{heading}</div>
-            <div className="modal-text mb-3">{content}</div>
+            <p className="modal-text mb-3">{content}</p>
             <div className="modal-tags">
               <i className="fas fa-tags"></i> {tags}
             </div>

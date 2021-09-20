@@ -130,10 +130,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.test {
-  background-color: black;
-}
 
+.modal-title {
+  width: 100%;
+}
 .modal-img {
   width: 100%;
 }
@@ -142,7 +142,7 @@ body {
   text-align: left;
 }
 .modal-text {
-  text-align: left;
+  text-align: justify;
   color: rgba(0, 0, 0, 0.5);
 }
 .modal-tags {
