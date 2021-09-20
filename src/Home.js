@@ -2,7 +2,7 @@ import React from "react";
 import Carousel from "react-bootstrap/Carousel";
 import img1 from "./assets/img_sliders/1.JPG";
 // import img2 from "./assets/img_sliders/2.JPG";
-import img3 from "./assets/img_sliders/3.JPG";
+// import img3 from "./assets/img_sliders/3.JPG";
 import profile from "./assets/profile/profile_pic.jpg";
 import Typewriter from 'typewriter-effect';
 
