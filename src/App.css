@@ -1,18 +1,19 @@
 /** BEGIN: General use */
 body {
   font-family: "Montserrat";
-  background-color: #ded0b4;
+  background-color: #E3DBDB;
   text-align: center;
+  /* color: #FFFFFF; */
 }
 .header {
   font-size: 200%;
 }
 .page {
-  height: 80vh;
+  height: 100vh;
 }
 
 .navigation {
-  background-color: #ded0b4;
+  background-color: #E3DBDB;
 }
 /** END: General use */
 
@@ -56,7 +57,7 @@ body {
 /** BEGIN: Home */
 .slider-img {
   width: 100%;
-  height: 60vh;
+  height: 100vh;
   object-fit: cover;
   opacity: 0.7;
 }
@@ -70,19 +71,28 @@ body {
   top: 50%;
   left: 55%;
   transform: translate(-50%, -50%);
+  text-align: left;
 }
 .profile-text-name {
-  font-size: 500%;
+  font-size: 400%;
 }
 .profile-text-subtext {
-  font-size: 150%;
+  font-size: 200%;
+}
+.profile-text-left {
+  display:inline-block;
+  margin-right:10px;
+}
+.profile-text-right {
+  display:inline-block;
+  color: #C9D5B5
 }
 .profile-img {
   position: absolute;
   width: 18%;
   border-radius: 50%;
-  top: 20%;
-  left: 10%;
+  top: 30%;
+  left: 15%;
   border: 5px solid white;
 }
 /** END: Home */

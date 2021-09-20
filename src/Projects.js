@@ -120,8 +120,8 @@ export default function Projects() {
                 setProjectInfo(
                   "DueOh",
                   "Students tend to miss out on their deadlines due to assignments being on different platforms like " +
-                    "Den Viterbi, Gradescope, Blackboard, Vocareum, etc. With DueOh, students can track the status of specific assignments" +
-                    "and are thus less likely to lose points from missing deadlines.",
+                  "Den Viterbi, Gradescope, Blackboard, Vocareum, etc. With DueOh, students can track the status of specific assignments" +
+                  "and are thus less likely to lose points from missing deadlines.",
                   dueoh,
                   "None",
                   "https://github.com/ghobind/DueOh",
