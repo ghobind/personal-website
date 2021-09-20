@@ -30,7 +30,7 @@ export default function Projects() {
     setTags(tags);
   }
   return (
-    <div className="" id="projects">
+    <div className="page" id="projects">
       {isModalShown && (
         <ProjectModal
           onClose={hideModal}
