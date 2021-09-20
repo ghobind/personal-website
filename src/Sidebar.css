@@ -2,13 +2,14 @@
   position: fixed;
   z-index: 99 !important; /* to make it always appear on top */
 }
-.sidebar-container {
+.mini-sidebar {
   background-color: black;
-  width: 3.5rem;
-  height: 25rem;
-  margin-top: 20vh;
+  width: 0.7rem;
+  height: 10rem;
+  margin-top: 40vh;
   border-radius: 0 30px 30px 0;
   padding: 1rem 0;
+  opacity: 0.7;
 
   display: flex;
   flex-direction: column;
@@ -16,6 +17,74 @@
   justify-content: space-between;
 
   position: relative;
+  color: white;
+
+  animation: fadeInAnimation 0.3s;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+@keyframes fadeOutAnimation {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.mini-sidebar-img {
+  width: 70%;
+  padding-top: 3rem;
+  filter: invert(92%) sepia(4%) saturate(1033%) hue-rotate(169deg)
+    brightness(78%) contrast(85%);
+}
+.mini-sidebar:hover .mini-sidebar-img {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%)
+    contrast(103%);
+}
+.sidebar-container {
+  background-color: black;
+  width: 3.5rem;
+  height: 25rem;
+  margin-top: 25vh;
+  border-radius: 0 30px 30px 0;
+  padding: 1rem 0;
+  opacity: 0.8;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+
+  animation: fadeInAnimation 0.3s;
+}
+.sidebar-container-fadeout {
+  background-color: black;
+  width: 3.5rem;
+  height: 25rem;
+  margin-top: 25vh;
+  border-radius: 0 30px 30px 0;
+  padding: 1rem 0;
+  opacity: 0.8;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+
+  animation: fadeOutAnimation 0.3s;
 }
 
 .slick-bar {

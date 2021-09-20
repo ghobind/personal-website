@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Sidebar.css";
 import Bars from "./assets/sidebar/bars-solid.svg";
+import AngleRight from "./assets/sidebar/angle-right-solid.svg";
 import Home from "./assets/sidebar/home-solid.svg";
 import About from "./assets/sidebar/user-solid.svg";
 import Skills from "./assets/sidebar/clipboard-list-solid.svg";
@@ -17,96 +18,122 @@ export default function Sidebar() {
   };
 
   const [click, setClick] = useState(false);
+  const [showSidebar, setShowSidebar] = useState(false);
+  const [fadingOut, setFadingOut] = useState(false);
 
   function handleClick() {
     setClick(!click);
   }
 
+  function hoverActive() {
+    setShowSidebar(true);
+  }
+
+  function hoverInactive() {
+    setFadingOut(true);
+    setTimeout(() => {
+      setShowSidebar(false);
+      setFadingOut(false);
+    }, 300);
+  }
+
   return (
     <div className="outer-container">
-      <div className="sidebar-container">
-        <img
-          className="sidebar-img"
-          clicked={click}
-          onClick={handleClick}
-          src={Bars}
-          alt="Bars"
-        />
-        <ul className={click ? "slick-bar-active" : "slick-bar"}>
-          <NavLink
-            className="sidebar-item"
-            activeClassName="sidebar-item"
-            smooth
-            to="#top"
-            scroll={scrollWithOffset}
-          >
-            <img className="sidebar-img" src={Home} alt="Home" />
-            <span className={click ? "sidebar-text-active" : "sidebar-text"}>
-              Home
-            </span>
-          </NavLink>
-          <NavLink
-            className="sidebar-item"
-            activeClassName="sidebar-item"
-            smooth
-            to="/#about"
-            scroll={scrollWithOffset}
-          >
-            <img className="sidebar-img" src={About} alt="About" />
-            <span className={click ? "sidebar-text-active" : "sidebar-text"}>
-              About
-            </span>
-          </NavLink>
-          <NavLink
-            className="sidebar-item"
-            activeClassName="sidebar-item"
-            smooth
-            to="/#skills"
-            scroll={scrollWithOffset}
-          >
-            <img className="sidebar-img" src={Skills} alt="Skills" />
-            <span className={click ? "sidebar-text-active" : "sidebar-text"}>
-              Skills
-            </span>
-          </NavLink>
-          <NavLink
-            className="sidebar-item"
-            activeClassName="sidebar-item"
-            smooth
-            to="/#experience"
-            scroll={scrollWithOffset}
-          >
-            <img className="sidebar-img" src={Work} alt="Experience" />
-            <span className={click ? "sidebar-text-active" : "sidebar-text"}>
-              Experience
-            </span>
-          </NavLink>
-          <NavLink
-            className="sidebar-item"
-            activeClassName="sidebar-item"
-            smooth
-            to="/#projects"
-            scroll={scrollWithOffset}
-          >
-            <img className="sidebar-img" src={Project} alt="Projects" />
-            <span className={click ? "sidebar-text-active" : "sidebar-text"}>
-              Projects
-            </span>
-          </NavLink>
-          <NavLink
-            className="sidebar-item"
-            activeClassName="sidebar-item"
-            smooth
-            to="/#contact"
-            scroll={scrollWithOffset}
-          >
-            <img className="sidebar-img" src={Contact} alt="Contact" />
-            <span className={click ? "sidebar-text-active" : "sidebar-text"}>
-              Contact
-            </span>
-          </NavLink>
-        </ul>
-      </div>
+      {!showSidebar && (
+        <div className="mini-sidebar" onMouseEnter={hoverActive}>
+          <img className="mini-sidebar-img" src={AngleRight} alt=">" />
+        </div>
+      )}
+      {showSidebar && (
+        <div
+          className={
+            fadingOut ? "sidebar-container-fadeout" : "sidebar-container"
+          }
+          onMouseLeave={hoverInactive}
+        >
+          <img
+            className="sidebar-img"
+            clicked={click}
+            onClick={handleClick}
+            src={Bars}
+            alt="Bars"
+          />
+          <ul className={click ? "slick-bar-active" : "slick-bar"}>
+            <NavLink
+              className="sidebar-item"
+              activeClassName="sidebar-item"
+              smooth
+              to="#top"
+              scroll={scrollWithOffset}
+            >
+              <img className="sidebar-img" src={Home} alt="Home" />
+              <span className={click ? "sidebar-text-active" : "sidebar-text"}>
+                Home
+              </span>
+            </NavLink>
+            <NavLink
+              className="sidebar-item"
+              activeClassName="sidebar-item"
+              smooth
+              to="/#about"
+              scroll={scrollWithOffset}
+            >
+              <img className="sidebar-img" src={About} alt="About" />
+              <span className={click ? "sidebar-text-active" : "sidebar-text"}>
+                About
+              </span>
+            </NavLink>
+            <NavLink
+              className="sidebar-item"
+              activeClassName="sidebar-item"
+              smooth
+              to="/#skills"
+              scroll={scrollWithOffset}
+            >
+              <img className="sidebar-img" src={Skills} alt="Skills" />
+              <span className={click ? "sidebar-text-active" : "sidebar-text"}>
+                Skills
+              </span>
+            </NavLink>
+            <NavLink
+              className="sidebar-item"
+              activeClassName="sidebar-item"
+              smooth
+              to="/#experience"
+              scroll={scrollWithOffset}
+            >
+              <img className="sidebar-img" src={Work} alt="Experience" />
+              <span className={click ? "sidebar-text-active" : "sidebar-text"}>
+                Experience
+              </span>
+            </NavLink>
+            <NavLink
+              className="sidebar-item"
+              activeClassName="sidebar-item"
+              smooth
+              to="/#projects"
+              scroll={scrollWithOffset}
+            >
+              <img className="sidebar-img" src={Project} alt="Projects" />
+              <span className={click ? "sidebar-text-active" : "sidebar-text"}>
+                Projects
+              </span>
+            </NavLink>
+            <NavLink
+              className="sidebar-item"
+              activeClassName="sidebar-item"
+              smooth
+              to="/#contact"
+              scroll={scrollWithOffset}
+            >
+              <img className="sidebar-img" src={Contact} alt="Contact" />
+              <span className={click ? "sidebar-text-active" : "sidebar-text"}>
+                Contact
+              </span>
+            </NavLink>
+          </ul>
+        </div>
+      )}
     </div>
   );
 }
