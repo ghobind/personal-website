@@ -38,6 +38,8 @@ export default function About() {
               <div>
                 My dogs, Flynn & Brie <br />
                 Video Games <br />
+                Photography <br />
+                Exotic cars <br />
                 Exploring food places
               </div>
             </div>

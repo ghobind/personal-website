@@ -73,14 +73,16 @@ body {
 }
 .carousel {
   position: relative;
+  height: 100vh;
   background: black;
 }
 .profile-text {
-  color: white;
+  color: #dedede;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .profile-text-name {
   font-size: 8vh;
@@ -94,22 +96,22 @@ body {
 }
 .profile-text-right {
   display: inline-block;
-  color: #c9d5b5;
+  color: #d9c8c8;
 }
 .wrapper {
   display: flex;
-  /* border: 1px solid red; */
 }
 .left-side {
   flex: 0 0 50%;
-  /* border: 1px solid blue; */
 }
 .right-side {
   flex: 1;
   padding-top: 10%;
-  /* border: 1px solid green; */
 }
-
+.home-contact-icon {
+  filter: invert(100%) sepia(3%) saturate(583%) hue-rotate(54deg)
+    brightness(118%) contrast(74%);
+}
 /** END: Home */
 
 /** BEGIN: About */
