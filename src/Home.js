@@ -67,7 +67,11 @@ export default function Home() {
         {images.map((image) => {
           return (
             <Carousel.Item>
-              <img className="slider-img" src={image} alt="carousel-image" />
+              <img
+                className="slider-img"
+                src={image}
+                alt="carousel-slideshow"
+              />
             </Carousel.Item>
           );
         })}
