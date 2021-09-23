@@ -31,7 +31,7 @@ export default function Projects() {
   }
   return (
     <div className="alt-body-color">
-      <div className="page-margins" id="projects">
+      <div className="projects-container page-margins" id="projects">
         {isModalShown && (
           <ProjectModal
             onClose={hideModal}
@@ -43,7 +43,7 @@ export default function Projects() {
             tags={tags}
           />
         )}
-        <h3 className="header ml-5">Projects</h3>
+        <h3 className="header mb-5">Projects</h3>
         <div className="container mb-3">
           <div className="row justify-content-center mb-3">
             <div

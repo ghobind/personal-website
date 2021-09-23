@@ -119,16 +119,6 @@ body {
 .about-text {
   font-size: 130%;
 }
-.float-container {
-  padding: 20px;
-}
-
-.float-child {
-  width: 50%;
-  float: left;
-  padding: 20px;
-  border: 2px solid black;
-}
 .profile-img {
   display: block;
   width: 30vh;
@@ -159,10 +149,33 @@ body {
 /** END: Skills */
 
 /** START: Work Experience */
+.experience-container {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.card-body-color {
+  background-color: #d9c8c8;
+}
+.card-body-header {
+  color: #643232;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+.card-body-subheader {
+  font-size: 1.1rem;
+}
+.card-body-text {
+  font-size: 1.1rem;
+}
+.card-body-text {
+}
 /** END: Work Experience */
 
 /** BEGIN: Projects */
-
+.projects-container {
+  margin-left: 15%;
+  margin-right: 15%;
+}
 .project-icon {
   width: 100%;
 }
