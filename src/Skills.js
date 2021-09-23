@@ -34,7 +34,7 @@ export default function Skills() {
               "React, JavaScript, jQuery, PHP, HTML/CSS, Node.js, Firebase, SQL, Github, Heroku, Bootstrap, MaterialUI"
             )}
           </div>
-          <div class="w-100"></div>
+          <div className="w-100"></div>
           <div className="col-sm text-center pt-3">
             {skillItem(
               appstore,

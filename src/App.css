@@ -17,9 +17,6 @@ body {
 .page {
   height: 100vh;
 }
-.container {
-  /* border: 1px solid green; */
-}
 .page-margins {
   padding-top: 3%;
   padding-bottom: 3%;
@@ -167,8 +164,6 @@ body {
 .card-body-text {
   font-size: 1.1rem;
 }
-.card-body-text {
-}
 /** END: Work Experience */
 
 /** BEGIN: Projects */
@@ -245,6 +240,20 @@ body {
 }
 
 /**END: Projects */
+
+/** START: Contact */
+.contact-container {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.contact-icon {
+  width: 3rem;
+}
+.contact-margins {
+  padding-top: 3%;
+  padding-bottom: 1%;
+}
+/** END: Contact */
 
 .test-border {
   border: 1px solid green;
