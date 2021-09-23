@@ -1,5 +1,5 @@
 ## Welcome to my Personal Website's source code!
 
-## Anthony Ghobind
+### Here you will find out more about me :)
 
-## USC '21
+#### Feel free to contact me if you have any questions!
