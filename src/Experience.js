@@ -100,13 +100,13 @@ export default function Experience() {
       <Timeline position="alternate">
         {displayCard(
           "Software Engineer Intern at Teamcal.Ai",
-          "Aug 2021 - Present",
+          "August 2021 - Present",
           "Mountain View, CA",
           firstItemText
         )}
         {displayCard(
           "Teaching Assistant for Graphical User Interfaces",
-          "Aug 2020 - Present",
+          "August 2020 - Present",
           "Los Angeles , CA",
           secondItemText
         )}
