@@ -2,8 +2,6 @@
 body {
   font-family: "Montserrat";
   background-color: #e3dbdb;
-  /* text-align: center; */
-  /* color: #FFFFFF; */
 }
 .header {
   font-size: 5vh;
@@ -17,7 +15,11 @@ body {
   height: 100vh;
 }
 .container {
-  padding-top: 5%;
+  /* border: 1px solid green; */
+}
+.about-container {
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .navigation {

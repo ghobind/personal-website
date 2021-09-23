@@ -2,9 +2,9 @@ import React from "react";
 import profile from "./assets/profile/profile_pic.jpg";
 export default function About() {
   return (
-    <div className="page container" id="about">
-      <div className="about-text mt-3">
-        <h3 className="header pt-3">About Me</h3>
+    <div className="container about-container" id="about">
+      <div className="about-text">
+        <h3 className="header">About Me</h3>
         <p className="my-3">
           Hello! <br />
           I'm currently a masters student studying Computer Science at
