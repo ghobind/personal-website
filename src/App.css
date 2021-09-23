@@ -112,16 +112,7 @@ body {
   padding-top: 10%;
   /* border: 1px solid green; */
 }
-.profile-img {
-  display: block;
-  width: 30vh;
-  border-radius: 50%;
-  padding-top: auto;
-  margin-left: auto;
-  margin-right: auto;
 
-  border: 5px solid white;
-}
 /** END: Home */
 
 /** BEGIN: About */
@@ -138,7 +129,37 @@ body {
   padding: 20px;
   border: 2px solid black;
 }
+.profile-img {
+  display: block;
+  width: 30vh;
+  border-radius: 50%;
+  padding-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 5px solid white;
+}
 /**END: About */
+/** START: Skills */
+.skills-container {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.skills-icon {
+  display: block;
+  width: 11rem;
+}
+.skills-type {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.skills-text {
+  font-size: 1.6rem;
+}
+/** END: Skills */
+
+/** START: Work Experience */
+/** END: Work Experience */
 
 /** BEGIN: Projects */
 
@@ -211,3 +232,7 @@ body {
 }
 
 /**END: Projects */
+
+.test-border {
+  border: 1px solid green;
+}
