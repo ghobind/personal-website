@@ -1,24 +1,51 @@
 import React from "react";
-
+import profile from "./assets/profile/profile_pic.jpg";
 export default function About() {
   return (
-    <div className="page" id="about">
-      <div className="about-text pt-3">
-        <h3 className="header">About</h3>
-
-        <p>
-          Hi! I'm Anthony, a Computer Science senior at the University of
-          Southern California and I'm expecting to graduate in Spring 2021!{" "}
-          <br />I have a strong interest in anything tech related, especially
-          web development and UI/UX design.
+    <div className="page container" id="about">
+      <div className="about-text mt-3">
+        <h3 className="header pt-3">About Me</h3>
+        <p className="my-3">
+          Hello! <br />
+          I'm currently a masters student studying Computer Science at
+          University of Southern California <br />
+          I'm also a Software Engineer Intern at Teamcal.Ai <br />
         </p>
-        <p>
-          Besides coding, I also enjoy photography and have a passion for cars
-        </p>
-        <p>
-          In my spare time, I love to play video games, do photography, and play
-          with my two dogs, Flynn and Brie
-        </p>
+        <div className="wrapper">
+          <div className="left-side">
+            <div>
+              <h3 className="subheader my-3 pt-3">Education</h3>
+              <div>M.S. Computer Science, May 2022</div>
+              <small className="text-muted">
+                University of Southern California
+              </small>
+              <div className="mt-3">B.S. Computer Science, May 2021</div>
+              <small className="text-muted">
+                University of Southern California
+              </small>
+            </div>
+            <div></div>
+            <div>
+              <h3 className="subheader my-3 pt-3">Technical Interests</h3>
+              <div>
+                Full Stack Web Development <br />
+                iOS Development <br />
+                UI/UX Design
+              </div>
+            </div>
+            <div>
+              <h3 className="subheader my-3 pt-3">Other Interests</h3>
+              <div>
+                My dogs, Flynn & Brie <br />
+                Video Games <br />
+                Exploring food places
+              </div>
+            </div>
+          </div>
+          <div className="right-side">
+            <img className="profile-img" src={profile} alt="profile" />
+          </div>
+        </div>
       </div>
     </div>
   );

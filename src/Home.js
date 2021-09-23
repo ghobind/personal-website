@@ -3,9 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 import img1 from "./assets/img_sliders/1.JPG";
 // import img2 from "./assets/img_sliders/2.JPG";
 // import img3 from "./assets/img_sliders/3.JPG";
-import profile from "./assets/profile/profile_pic.jpg";
-import Typewriter from 'typewriter-effect';
-
+import Typewriter from "typewriter-effect";
 
 export default function Home() {
   return (
@@ -25,12 +23,15 @@ export default function Home() {
       </Carousel>
       <div className="profile-text">
         <div className="profile-text-subtext">
-          <div className="profile-text-left">
-            I am a</div>
+          <div className="profile-text-left">I am a</div>
           <div className="profile-text-right">
             <Typewriter
               options={{
-                strings: ['Software Engineer', 'Full Stack Web Developer', 'Gamer'],
+                strings: [
+                  "Software Engineer",
+                  "Full Stack Web Developer",
+                  "Gamer",
+                ],
                 autoStart: true,
                 loop: true,
               }}
@@ -39,7 +40,6 @@ export default function Home() {
         </div>
         <div className="profile-text-name">Anthony Ghobind</div>
       </div>
-      <img className="profile-img" src={profile} alt="profile" />
     </div>
   );
 }
