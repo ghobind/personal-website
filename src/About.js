@@ -2,7 +2,7 @@ import React from "react";
 import profile from "./assets/profile/profile_pic.jpg";
 export default function About() {
   return (
-    <div className="container about-container" id="about">
+    <div className="container page-margins" id="about">
       <div className="about-text">
         <h3 className="header">About Me</h3>
         <p className="my-3">

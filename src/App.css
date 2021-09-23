@@ -11,13 +11,16 @@ body {
   font-size: 3vh;
   font-weight: bold;
 }
+.alt-body-color {
+  background-color: #d9c8c8;
+}
 .page {
   height: 100vh;
 }
 .container {
   /* border: 1px solid green; */
 }
-.about-container {
+.page-margins {
   padding-top: 3%;
   padding-bottom: 3%;
 }
