@@ -42,14 +42,6 @@ export default function ProjectModal({
                         src={image}
                         alt="modal carousel"
                       />
-                      {/* <InnerImageZoom
-                        zoomType="hover"
-                        zoomPreload={true}
-                        hideHint={true}
-                        className="modal-img"
-                        src={image}
-                        alt="modal carousel"
-                      /> */}
                     </Carousel.Item>
                   );
                 })}
