@@ -107,7 +107,7 @@ export default function Projects() {
           </div>
         ),
         image: stock,
-        carouselImages: [grocery],
+        carouselImages: [],
         websiteUrl: "None",
         sourceCodeUrl: "None",
         languages: "Java / JavaScript / AJAX / jQuery / HTML / CSS",

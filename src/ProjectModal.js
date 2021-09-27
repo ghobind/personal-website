@@ -2,11 +2,14 @@ import { Modal } from "react-bootstrap";
 import React from "react";
 import { createPortal } from "react-dom";
 import Carousel from "react-bootstrap/Carousel";
+import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
+import InnerImageZoom from "react-inner-image-zoom";
 
 export default function ProjectModal({
   onClose,
   heading,
   content,
+  img,
   carouselImages,
   webLink,
   srcLink,
@@ -17,25 +20,30 @@ export default function ProjectModal({
       <Modal show={true} onHide={onClose} dialogClassName="my-modal" centered>
         <Modal.Header closeButton>
           <Modal.Title className="modal-title text-center">
-            <Carousel
-              className="modal-title"
-              controls={true}
-              indicators={false}
-              interval={null}
-              variant="light"
-            >
-              {carouselImages.map((image, index) => {
-                return (
-                  <Carousel.Item key={index}>
-                    <img
-                      className="modal-img"
-                      src={image}
-                      alt="modal carousel"
-                    />
-                  </Carousel.Item>
-                );
-              })}
-            </Carousel>
+            {carouselImages.length !== 0 && (
+              <Carousel
+                className="modal-title"
+                controls={false}
+                indicators={true}
+                interval={null}
+              >
+                {carouselImages.map((image, index) => {
+                  return (
+                    <Carousel.Item key={index}>
+                      <InnerImageZoom
+                        zoomType="hover"
+                        zoomPreload={true}
+                        hideHint={true}
+                        className="modal-img"
+                        src={image}
+                        alt="modal carousel"
+                      />
+                    </Carousel.Item>
+                  );
+                })}
+              </Carousel>
+            )}
+            {carouselImages.length === 0 && <img src={img} alt="main" />}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
