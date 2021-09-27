@@ -173,13 +173,17 @@ body {
   margin-left: 15%;
   margin-right: 15%;
 }
+.subprojects-container {
+  margin-left: 8%;
+  margin-right: 8%;
+}
 .project-icon {
   width: 100%;
 }
 
 .logo {
   position: relative;
-  width: 30%;
+  width: 25vh;
   overflow: hidden;
 }
 .overlay {
@@ -193,7 +197,7 @@ body {
   position: absolute;
   opacity: 0;
   z-index: 1;
-  transition: 1s all;
+  transition: 0.5s all;
 }
 .logo:hover .overlay {
   opacity: 0.5;
@@ -207,20 +211,25 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
+.my-modal {
+  width: 45vw;
+  max-width: 45vw;
+}
 .modal-title {
   width: 100%;
 }
 .modal-img {
-  width: 100%;
+  width: 10vw;
 }
 .modal-heading {
   font-weight: bold;
   text-align: left;
+  font-size: 1.5rem;
 }
 .modal-text {
   text-align: justify;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.1rem;
 }
 .modal-tags {
   font-size: 80%;

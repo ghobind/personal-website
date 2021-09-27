@@ -13,16 +13,16 @@ export default function ProjectModal({
 }) {
   return createPortal(
     <>
-      <Modal show={true} onHide={onClose}>
+      <Modal show={true} onHide={onClose} dialogClassName="my-modal" centered>
         <Modal.Header closeButton>
-          <Modal.Title className="modal-title">
+          <Modal.Title className="modal-title text-center">
             <img className="modal-img" src={img} alt="modal pic" />
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div className="container pl-3">
             <div className="modal-heading mb-3">{heading}</div>
-            <p className="modal-text mb-3">{content}</p>
+            <div className="modal-text mb-3">{content}</div>
             <div className="modal-tags">
               <i className="fas fa-tags"></i> {tags}
             </div>
