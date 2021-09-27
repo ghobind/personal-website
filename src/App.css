@@ -29,18 +29,18 @@ body {
 
 /** BEGIN: navigation */
 
-.brand {
+/* #navigation .brand {
   color: black;
   font-size: 250%;
   text-decoration: none;
 }
-.brand:hover {
+#navigation .brand:hover {
   color: black;
   font-size: 250%;
   text-decoration: none;
 }
 
-.active {
+#navigation .active {
   font-size: 120%;
   color: rgba(0, 0, 0, 0.9);
   border-bottom: 1px solid rgba(0, 0, 0, 0.7);
@@ -48,7 +48,7 @@ body {
   text-decoration: none;
 }
 
-.default {
+#navigation .default {
   font-size: 120%;
   color: rgba(0, 0, 0, 0.5);
   padding: 0.4rem 1rem;
@@ -56,11 +56,11 @@ body {
   transition: all 0.3s;
 }
 
-.default:hover {
+#navigation .default:hover {
   font-size: 120%;
   color: rgba(0, 0, 0, 0.7);
   text-decoration: none;
-}
+} */
 
 /** END: navigation */
 
@@ -215,14 +215,22 @@ body {
   width: 45vw;
   max-width: 45vw;
 }
+.modal-header {
+  background-color: #d9c8c8;
+}
 .modal-title {
+  width: 100%;
+  height: 47vh;
+}
+.modal-carousel {
   width: 100%;
   height: 45vh;
 }
 .modal-img {
-  height: 40vh;
+  height: 45vh;
   width: 100%;
   object-fit: contain;
+  background-color: #d9c8c8;
 }
 .modal-heading {
   font-weight: bold;

@@ -1,3 +1,4 @@
+import "./Modal.css";
 import { Modal } from "react-bootstrap";
 import React from "react";
 import { createPortal } from "react-dom";
@@ -17,12 +18,18 @@ export default function ProjectModal({
 }) {
   return createPortal(
     <>
-      <Modal show={true} onHide={onClose} dialogClassName="my-modal" centered>
-        <Modal.Header closeButton>
+      <Modal
+        show={true}
+        onHide={onClose}
+        dialogClassName="my-modal"
+        centered
+        id="modal"
+      >
+        <Modal.Header closeButton className="modal-header">
           <Modal.Title className="modal-title text-center">
             {carouselImages.length !== 0 && (
               <Carousel
-                className="modal-title"
+                className="modal-carousel"
                 controls={false}
                 indicators={true}
                 interval={null}
@@ -30,20 +37,27 @@ export default function ProjectModal({
                 {carouselImages.map((image, index) => {
                   return (
                     <Carousel.Item key={index}>
-                      <InnerImageZoom
+                      <img
+                        className="modal-img"
+                        src={image}
+                        alt="modal carousel"
+                      />
+                      {/* <InnerImageZoom
                         zoomType="hover"
                         zoomPreload={true}
                         hideHint={true}
                         className="modal-img"
                         src={image}
                         alt="modal carousel"
-                      />
+                      /> */}
                     </Carousel.Item>
                   );
                 })}
               </Carousel>
             )}
-            {carouselImages.length === 0 && <img src={img} alt="main" />}
+            {carouselImages.length === 0 && (
+              <img className="modal-img" src={img} alt="main" />
+            )}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>

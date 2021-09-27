@@ -9,6 +9,7 @@ import ilearning from "./assets/projects/ilearning.png";
 import parkour_start from "./assets/projects/parkour_start.jpg";
 import pacman from "./assets/projects/pacman.jpg";
 import mariokart from "./assets/projects/mario_kart.jpg";
+import personal from "./assets/projects/personal.png";
 import grocery_1 from "./assets/projects/grocery/home.png";
 import grocery_2 from "./assets/projects/grocery/graph.png";
 import grocery_3 from "./assets/projects/grocery/new.png";
@@ -17,6 +18,12 @@ import x8_1 from "./assets/projects/x8/x8_home.jpg";
 import x8_2 from "./assets/projects/x8/x8_wishlist.jpg";
 import x8_3 from "./assets/projects/x8/x8_storelocator.jpg";
 import x8_4 from "./assets/projects/x8/x8_profile.jpg";
+import dueoh_1 from "./assets/projects/dueoh/Login.png";
+import dueoh_2 from "./assets/projects/dueoh/Profile_.png";
+import dueoh_3 from "./assets/projects/dueoh/Calendar_.png";
+import dueoh_4 from "./assets/projects/dueoh/Analytics.png";
+import dueoh_5 from "./assets/projects/dueoh/Week.png";
+import dueoh_6 from "./assets/projects/dueoh/GUI.png";
 import ProjectModal from "./ProjectModal";
 
 export default function Projects() {
@@ -121,7 +128,7 @@ export default function Projects() {
           "Den Viterbi, Gradescope, Blackboard, Vocareum, etc. With DueOh, students can track the status of specific assignments" +
           "and are thus less likely to lose points from missing deadlines.",
         image: dueoh,
-        carouselImages: [grocery],
+        carouselImages: [dueoh_1, dueoh_2, dueoh_3, dueoh_4, dueoh_5, dueoh_6],
         websiteUrl: "None",
         sourceCodeUrl: "https://github.com/ghobind/DueOh",
         languages: "Java / Javascript / HTML / CSS",
@@ -159,8 +166,8 @@ export default function Projects() {
       {
         name: "Personal Website",
         info: "Created website to showcase resume",
-        image: logo,
-        carouselImages: [grocery],
+        image: personal,
+        carouselImages: [],
         websiteUrl: "https://anthonyghobind.netlify.app",
         sourceCodeUrl: "https://github.com/ghobind/personal-website",
         languages: "ReactJS / HTML / CSS",
@@ -169,7 +176,7 @@ export default function Projects() {
         name: "Starforce Simulator",
         info: "Simulates probability and costs of enhancing equipments with Starforce in the MMORPG Maplestory",
         image: sf_sim,
-        carouselImages: [grocery],
+        carouselImages: [],
         websiteUrl: "None",
         sourceCodeUrl: "https://github.com/ghobind/starforce-simulator",
         languages: "C++",

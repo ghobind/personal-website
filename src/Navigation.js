@@ -8,7 +8,7 @@ export default function Navigation() {
     window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
   };
   return (
-    <div className="navigation pl-3 pb-3 pt-3 sticky-top">
+    <div className="navigation pl-3 pb-3 pt-3 sticky-top" id="navigation">
       <NavLink
         smooth
         to="#top"
