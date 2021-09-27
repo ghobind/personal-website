@@ -183,7 +183,7 @@ body {
 
 .logo {
   position: relative;
-  width: 25vh;
+  width: 13vw;
   overflow: hidden;
 }
 .overlay {
@@ -217,9 +217,12 @@ body {
 }
 .modal-title {
   width: 100%;
+  height: 40vh;
 }
 .modal-img {
-  width: 10vw;
+  height: 40vh;
+  width: 80%;
+  object-fit: contain;
 }
 .modal-heading {
   font-weight: bold;

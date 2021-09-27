@@ -9,6 +9,14 @@ import ilearning from "./assets/projects/ilearning.png";
 import parkour_start from "./assets/projects/parkour_start.jpg";
 import pacman from "./assets/projects/pacman.jpg";
 import mariokart from "./assets/projects/mario_kart.jpg";
+import grocery_1 from "./assets/projects/grocery/home.png";
+import grocery_2 from "./assets/projects/grocery/graph.png";
+import grocery_3 from "./assets/projects/grocery/new.png";
+import grocery_4 from "./assets/projects/grocery/import.png";
+import x8_1 from "./assets/projects/x8/x8_home.jpg";
+import x8_2 from "./assets/projects/x8/x8_wishlist.jpg";
+import x8_3 from "./assets/projects/x8/x8_storelocator.jpg";
+import x8_4 from "./assets/projects/x8/x8_profile.jpg";
 import ProjectModal from "./ProjectModal";
 
 export default function Projects() {
@@ -16,6 +24,7 @@ export default function Projects() {
   const [heading, setHeading] = useState("");
   const [content, setContent] = useState("");
   const [img, setImg] = useState();
+  const [carouselImages, setCarouselImages] = useState([]);
   const [webLink, setWebLink] = useState();
   const [srcLink, setSrcLink] = useState();
   const [tags, setTags] = useState();
@@ -42,6 +51,7 @@ export default function Projects() {
           </div>
         ),
         image: grocery,
+        carouselImages: [grocery_1, grocery_2, grocery_3, grocery_4],
         websiteUrl: "https://ghobind-grocery-checklist.netlify.app/",
         sourceCodeUrl: "https://github.com/ghobind/grocery-checklist",
         languages: "ReactJS / JavaScript / AJAX / jQuery / HTML / CSS",
@@ -50,6 +60,7 @@ export default function Projects() {
         name: "iLearning Platform Tools",
         info: <div>Write Description</div>,
         image: ilearning,
+        carouselImages: [grocery],
         websiteUrl: "None",
         sourceCodeUrl: "None",
         languages: "ReactJS / Node.js / JavaScript / AJAX ",
@@ -73,6 +84,7 @@ export default function Projects() {
           </div>
         ),
         image: x8,
+        carouselImages: [x8_1, x8_2, x8_3, x8_4],
         websiteUrl: "None",
         sourceCodeUrl: "None",
         languages: "Swift / Xcode / iOS / Firebase",
@@ -95,6 +107,7 @@ export default function Projects() {
           </div>
         ),
         image: stock,
+        carouselImages: [grocery],
         websiteUrl: "None",
         sourceCodeUrl: "None",
         languages: "Java / JavaScript / AJAX / jQuery / HTML / CSS",
@@ -108,6 +121,7 @@ export default function Projects() {
           "Den Viterbi, Gradescope, Blackboard, Vocareum, etc. With DueOh, students can track the status of specific assignments" +
           "and are thus less likely to lose points from missing deadlines.",
         image: dueoh,
+        carouselImages: [grocery],
         websiteUrl: "None",
         sourceCodeUrl: "https://github.com/ghobind/DueOh",
         languages: "Java / Javascript / HTML / CSS",
@@ -117,6 +131,7 @@ export default function Projects() {
         name: "Parkour's Edge",
         info: "Created a 3D game similar to Mirror's Edge. Do all sorts of cool stuff like wall jumping.",
         image: parkour_start,
+        carouselImages: [grocery],
         websiteUrl: "None",
         sourceCodeUrl: "None",
         languages: "C++",
@@ -125,6 +140,7 @@ export default function Projects() {
         name: "Pac Man",
         info: "Utilized A* search to find shortest path to current position of Pacman",
         image: pacman,
+        carouselImages: [grocery],
         websiteUrl: "None",
         sourceCodeUrl: "None",
         languages: "C++",
@@ -133,6 +149,7 @@ export default function Projects() {
         name: "Mario Kart",
         info: "Play a replica of Mario Kart's famous Rainbow Bridge versus an AI",
         image: mariokart,
+        carouselImages: [grocery],
         websiteUrl: "None",
         sourceCodeUrl: "None",
         languages: "C++",
@@ -143,6 +160,7 @@ export default function Projects() {
         name: "Personal Website",
         info: "Created website to showcase resume",
         image: logo,
+        carouselImages: [grocery],
         websiteUrl: "https://anthonyghobind.netlify.app",
         sourceCodeUrl: "https://github.com/ghobind/personal-website",
         languages: "ReactJS / HTML / CSS",
@@ -151,6 +169,7 @@ export default function Projects() {
         name: "Starforce Simulator",
         info: "Simulates probability and costs of enhancing equipments with Starforce in the MMORPG Maplestory",
         image: sf_sim,
+        carouselImages: [grocery],
         websiteUrl: "None",
         sourceCodeUrl: "https://github.com/ghobind/starforce-simulator",
         languages: "C++",
@@ -164,10 +183,19 @@ export default function Projects() {
   function showModal() {
     setIsModalShown(true);
   }
-  function setProjectInfo(heading, content, img, webLink, srcLink, tags) {
+  function setProjectInfo(
+    heading,
+    content,
+    img,
+    carouselImages,
+    webLink,
+    srcLink,
+    tags
+  ) {
     setHeading(heading);
     setContent(content);
     setImg(img);
+    setCarouselImages(carouselImages);
     setWebLink(webLink);
     setSrcLink(srcLink);
     setTags(tags);
@@ -177,6 +205,7 @@ export default function Projects() {
     name,
     info,
     image,
+    carouselImages,
     websiteUrl,
     sourceCodeUrl,
     languages
@@ -190,6 +219,7 @@ export default function Projects() {
             name,
             info,
             image,
+            carouselImages,
             websiteUrl,
             sourceCodeUrl,
             languages
@@ -213,6 +243,7 @@ export default function Projects() {
             heading={heading}
             content={content}
             img={img}
+            carouselImages={carouselImages}
             webLink={webLink}
             srcLink={srcLink}
             tags={tags}
@@ -230,6 +261,7 @@ export default function Projects() {
                         project.name,
                         project.info,
                         project.image,
+                        project.carouselImages,
                         project.websiteUrl,
                         project.sourceCodeUrl,
                         project.languages

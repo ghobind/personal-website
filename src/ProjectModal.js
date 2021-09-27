@@ -1,12 +1,13 @@
 import { Modal } from "react-bootstrap";
 import React from "react";
 import { createPortal } from "react-dom";
+import Carousel from "react-bootstrap/Carousel";
 
 export default function ProjectModal({
   onClose,
   heading,
   content,
-  img,
+  carouselImages,
   webLink,
   srcLink,
   tags,
@@ -16,7 +17,25 @@ export default function ProjectModal({
       <Modal show={true} onHide={onClose} dialogClassName="my-modal" centered>
         <Modal.Header closeButton>
           <Modal.Title className="modal-title text-center">
-            <img className="modal-img" src={img} alt="modal pic" />
+            <Carousel
+              className="modal-title"
+              controls={true}
+              indicators={false}
+              interval={null}
+              variant="light"
+            >
+              {carouselImages.map((image, index) => {
+                return (
+                  <Carousel.Item key={index}>
+                    <img
+                      className="modal-img"
+                      src={image}
+                      alt="modal carousel"
+                    />
+                  </Carousel.Item>
+                );
+              })}
+            </Carousel>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>

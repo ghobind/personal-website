@@ -64,9 +64,9 @@ export default function Home() {
         interval={5000}
         pause={false}
       >
-        {images.map((image) => {
+        {images.map((image, index) => {
           return (
-            <Carousel.Item>
+            <Carousel.Item key={index}>
               <img
                 className="slider-img"
                 src={image}
