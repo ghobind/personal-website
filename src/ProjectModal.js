@@ -4,7 +4,7 @@ import React from "react";
 import { createPortal } from "react-dom";
 import Carousel from "react-bootstrap/Carousel";
 import "react-inner-image-zoom/lib/InnerImageZoom/styles.css";
-import InnerImageZoom from "react-inner-image-zoom";
+// import InnerImageZoom from "react-inner-image-zoom";
 
 export default function ProjectModal({
   onClose,

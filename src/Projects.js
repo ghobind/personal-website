@@ -3,7 +3,6 @@ import grocery from "./assets/projects/grocery.png";
 import sf_sim from "./assets/projects/sf_sim.png";
 import x8 from "./assets/projects/x8.jpeg";
 import dueoh from "./assets/projects/dueoh.jpg";
-import logo from "./assets/projects/logo.jpg";
 import stock from "./assets/projects/stock_portfolio.png";
 import ilearning from "./assets/projects/ilearning.png";
 import parkour_start from "./assets/projects/parkour_start.jpg";
