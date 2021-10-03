@@ -22,6 +22,15 @@ body {
   padding-bottom: 3%;
 }
 
+.highlight-text {
+  color: #b69696;
+}
+.highlight-text:hover {
+  color: #966969;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
 .navigation {
   background-color: #e3dbdb;
 }
@@ -109,8 +118,14 @@ body {
   padding-top: 10%;
 }
 .home-contact-icon {
+  width: 3rem;
   filter: invert(100%) sepia(3%) saturate(583%) hue-rotate(54deg)
     brightness(118%) contrast(74%);
+}
+.home-contact-icon:hover {
+  filter: invert(93%) sepia(4%) saturate(658%) hue-rotate(314deg)
+    brightness(88%) contrast(93%);
+  transition: 0.3s all;
 }
 /** END: Home */
 
@@ -173,18 +188,23 @@ body {
   margin-left: 15%;
   margin-right: 15%;
 }
-.subprojects-container {
-  margin-left: 8%;
-  margin-right: 8%;
-}
 .project-icon {
   width: 100%;
 }
-
+.project-subheader {
+  font-size: 2vh;
+}
 .logo {
   position: relative;
   width: 13vw;
   overflow: hidden;
+}
+@media (max-width: 769px) {
+  .logo {
+    position: relative;
+    width: 50vw;
+    overflow: hidden;
+  }
 }
 .overlay {
   top: 0;
@@ -197,7 +217,7 @@ body {
   position: absolute;
   opacity: 0;
   z-index: 1;
-  transition: 0.5s all;
+  transition: 0.3s all;
 }
 .logo:hover .overlay {
   opacity: 0.5;
@@ -250,12 +270,12 @@ body {
   text-align: left;
 }
 .footer-content {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.8);
 }
 .footer-content:hover {
-  color: rgba(252, 122, 99, 0.877);
+  color: #d9c8c8;
   text-decoration: none;
-  transition: all 0.5s;
+  transition: all 0.3s;
 }
 .close {
   display: none;
@@ -270,6 +290,11 @@ body {
 }
 .contact-icon {
   width: 3rem;
+}
+.contact-icon:hover {
+  filter: invert(53%) sepia(0%) saturate(656%) hue-rotate(208deg)
+    brightness(79%) contrast(58%);
+  transition: all 0.3s;
 }
 .contact-margins {
   padding-top: 3%;

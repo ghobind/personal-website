@@ -9,7 +9,16 @@ export default function About() {
           Hello! <br />
           I'm currently a masters student studying Computer Science at
           University of Southern California <br />
-          I'm also a Software Engineer Intern at Teamcal.Ai <br />
+          I'm also a Software Engineer Intern at{" "}
+          <a
+            className="highlight-text"
+            href="https://teamcal.ai/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Teamcal.Ai
+          </a>{" "}
+          <br />
         </p>
         <div className="wrapper">
           <div className="left-side">
@@ -36,7 +45,16 @@ export default function About() {
             <div>
               <h3 className="subheader my-3 pt-3">Other Interests</h3>
               <div>
-                My dogs, Flynn & Brie <br />
+                My dogs,{" "}
+                <a
+                  className="highlight-text"
+                  href="https://www.instagram.com/flynngolden_briecorgi/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Flynn & Brie{" "}
+                </a>
+                <br />
                 Video Games <br />
                 Photography <br />
                 Exotic cars <br />

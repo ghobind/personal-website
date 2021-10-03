@@ -105,7 +105,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                 >
                   <img
-                    className="contact-icon home-contact-icon"
+                    className="home-contact-icon"
                     src={contact.icon}
                     alt={contact.name}
                   />
@@ -120,11 +120,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img
-                className="contact-icon home-contact-icon"
-                src={resume}
-                alt="resume"
-              />
+              <img className="home-contact-icon" src={resume} alt="resume" />
             </a>
           </div>
         </div>

@@ -54,18 +54,18 @@ export default function ProjectModal({
         </Modal.Header>
         <Modal.Body>
           <div className="container pl-3">
-            <div className="modal-heading mb-3">{heading}</div>
-            <div className="modal-text mb-3">{content}</div>
-            <div className="modal-tags">
-              <i className="fas fa-tags"></i> {tags}
+            <div className="modal-heading mb-2 mt-3">{heading}</div>
+            <div className="modal-tags mb-2">
+              <i className="fas fa-tags mb-2"></i> {tags}
             </div>
+            <div className="modal-text mb-3">{content}</div>
           </div>
         </Modal.Body>
         {(webLink !== "None" || srcLink !== "None") && (
           <Modal.Footer className="d-block text-left ml-3 pt-3 pb-3">
             {webLink !== "None" && (
               <a
-                className="footer-content"
+                className="footer-content mr-4"
                 href={webLink}
                 target="_blank"
                 rel="noopener noreferrer"
