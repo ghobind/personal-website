@@ -45,7 +45,7 @@ export default function About() {
             <div>
               <h3 className="subheader my-3 pt-3">Other Interests</h3>
               <div>
-                My dogs,{" "}
+                My dogs |{" "}
                 <a
                   className="highlight-text"
                   href="https://www.instagram.com/flynngolden_briecorgi/"
@@ -55,7 +55,16 @@ export default function About() {
                   Flynn & Brie{" "}
                 </a>
                 <br />
-                Video Games <br />
+                Video Games |{" "}
+                <a
+                  className="highlight-text"
+                  href="https://blitz.gg/valorant/profile/polse-0000"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Valorant{" "}
+                </a>
+                <br />
                 Photography <br />
                 Exotic cars <br />
                 Exploring food places

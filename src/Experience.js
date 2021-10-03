@@ -38,7 +38,7 @@ export default function Experience() {
       <ul>
         <li>
           Assist professor in lecture to teach GUI concepts to students using{" "}
-          <strong>JavaFX</strong>
+          <strong>JavaFX</strong> and grade assignments
         </li>
         <li>Hold one-on-one office hours to help students with assignments </li>
         <li>
