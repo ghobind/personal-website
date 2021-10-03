@@ -61,18 +61,34 @@ export default function Projects() {
         name: "Grocery Checklist",
         info: (
           <div>
-            <div>
-              • A single page ReactJS application that streamlines the process
-              of grocery shopping
+            <div className="mb-3">
+              <div>
+                • A single page ReactJS application that streamlines the process
+                of grocery shopping
+              </div>
+              <div>
+                • Utilized CRUD operations when making AJAX calls to JSON server
+                to display purchases on past grocery trips
+              </div>
+              <div>
+                • Prepared unit tests for components and functions with MirageJS
+                to mitigate program-breaking errors
+              </div>
+            </div>
+            <div className="modal-subheading">
+              Overview of how the app is used:
             </div>
             <div>
-              • Displays details of all past shopping trips Utilized CRUD
-              operations when making AJAX calls to JSON server to display
-              purchases on past grocery trips
-            </div>
-            <div>
-              • Prepared unit tests for components and functions with MirageJS
-              to mitigate program-breaking errors
+              Home: <br />- Display details of all past shopping trips <br />-
+              Able to sort based on any of the 4 categories <br />- Selecting
+              any row will allow user to update that shopping list
+              <br />
+              Graph: <br />- Plot a graph of all past groceries with respect to
+              date and spending to keep track of expenditure
+              <br /> New: <br /> - Create a brand new shopping list and add it
+              to the database when "Save" is pressed <br />
+              Import: <br />- Allows user to create a new shopping list but
+              already pre-filled with a past grocery list of user's choice
             </div>
           </div>
         ),
@@ -84,7 +100,47 @@ export default function Projects() {
       },
       {
         name: "iLearning Platform Tools",
-        info: <div>Write Description</div>,
+        info: (
+          <div>
+            <div className="mb-3">
+              <div>
+                • Developed a class management tool using ReactJS to facilitate
+                group online learning such that students with diverse
+                perspectives are grouped together using a custom clustering
+                algorithm
+              </div>
+              <div>
+                • Integrated the app into MS Teams which will be used in an
+                iPodia course with 8-10 participating universities
+              </div>
+              <div>
+                • Set up endpoints to request for information from the backend
+                stored using Node.js
+              </div>
+            </div>
+            <div className="modal-subheading">
+              Overview of how the app is used:
+            </div>
+            <div>
+              Step 1: <br /> - We decide on the type of group to create for any
+              particular activity <br />
+              Step 2 <br /> -We then select the category and decide its weights
+              to determine how dissimilar we want the students in each group to
+              be <br /> Step 3: <br /> Next, we decide the size of each group{" "}
+              <br /> - These choices will then be fed to the backend for the
+              clustering algorithm to decide how to group the students <br />{" "}
+              Step 4: <br />- Once the algorithm is done, it will return the
+              different groups created as a preview <br /> - Notice that a
+              "Diversity Percentage" is displayed to show the result of
+              dissimilarity of students in each group <br />- This is done prior
+              to actual group creation to allow user to make changes if
+              necessary <br /> Step 5: <br /> Once finalized, we pass this data
+              to the backend again to actually create and save these groups{" "}
+              <br />- At the same time, group chats are automatically created
+              for each group to allow discussion
+            </div>
+          </div>
+        ),
         image: ilearning,
         carouselImages: [
           ilearning_1,
@@ -104,17 +160,40 @@ export default function Projects() {
         name: "X8 Clothing iOS App",
         info: (
           <div>
-            <div>
-              • Prototyped an iOS application using Swift to display inventory
-              of X8, a clothing brand based in Indonesia
+            <div className="mb-3">
+              <div>
+                • Prototyped an iOS application using Swift to display inventory
+                of X8, a clothing brand based in Indonesia
+              </div>
+              <div>
+                • Utilized Firebase to store user information and their
+                favorited items
+              </div>
+              <div>
+                • Integrated Google Maps into the application as part of a Store
+                Locator feature
+              </div>
+            </div>
+            <div className="modal-subheading">
+              Overview of how the app is used:
             </div>
             <div>
-              • Utilized Firebase to store user information and their favorited
-              items
-            </div>
-            <div>
-              • Integrated Google Maps into the application as part of a Store
-              Locator feature
+              There are 4 sections of the app:
+              <br />
+              Home: <br />- Allow user to explore X8's current inventory which
+              is pulled from Firebase <br /> - Tapping "New Arrival" will bring
+              the user to a different view, showing a table of all the current
+              products of X8 <br />
+              - Each item has a heart on the top right corner to allow user to
+              "Wishlist" that item <br />
+              Wishlist: <br /> - This section contains all the clothing that the
+              current user has wishlisted <br />
+              Store Locator: <br /> - Made use of GoogleMaps to display all
+              current locations of X8 stores <br />- Identifies the closest
+              store to the user <br />
+              Profile: <br />
+              - Prompts user to login/sign up in order to make full use of the
+              app <br />
             </div>
           </div>
         ),
@@ -128,16 +207,28 @@ export default function Projects() {
         name: "Stock Portfolio Management",
         info: (
           <div>
-            <div>
-              • Utilized Scrum with a team of 4 to make a website that provided
-              the value of portfolio stocks over time
+            <div className="mb-3">
+              <div>
+                • Utilized Scrum with a team of 4 to make a website that
+                provided the value of portfolio stocks over time
+              </div>
+              <div>
+                • Leveraged HighCharts API to visualize and reflect real time
+                stock price changes
+              </div>
+              <div>
+                • Implemented endpoints and stored necessary data using MySQL
+              </div>
+            </div>
+            <div className="modal-subheading">
+              Overview of how the app is used:
             </div>
             <div>
-              • Leveraged HighCharts API to visualize and reflect real time
-              stock price changes
-            </div>
-            <div>
-              • Implemented endpoints and stored necessary data using MySQL
+              - Able to login/register <br />
+              - Able to add stocks with shortened name. A check will be done
+              prior to adding to ensure the stock exists. <br />- Made use of
+              HighCharts API to display all stocks user currently has <br />-
+              All data saved in MySQL database
             </div>
           </div>
         ),
@@ -145,26 +236,72 @@ export default function Projects() {
         carouselImages: [],
         websiteUrl: "None",
         sourceCodeUrl: "None",
-        languages: "Java / JavaScript / AJAX / jQuery / HTML / CSS",
+        languages: "Java / JavaScript / AJAX / jQuery / HTML / CSS / MySQL",
       },
     ],
     [
       {
         name: "DueOh",
-        info:
-          "Students tend to miss out on their deadlines due to assignments being on different platforms like " +
-          "Den Viterbi, Gradescope, Blackboard, Vocareum, etc. With DueOh, students can track the status of specific assignments" +
-          "and are thus less likely to lose points from missing deadlines.",
+        info: (
+          <div>
+            <div className="mb-3">
+              Students tend to miss out on their deadlines due to assignments
+              being on different platforms like Den Viterbi, Gradescope,
+              Blackboard, Vocareum, etc. With DueOh, students can track the
+              status of specific assignments and are thus less likely to lose
+              points from missing deadlines.
+            </div>
+            <div className="modal-subheading">
+              Overview of how the app is used:
+            </div>
+            <div>
+              - Able to login/register <br />
+              - Once logged in, we will display all classes the user is
+              currently taking and display all assignments <br />
+              - We help to track submission status of each assignment <br />-
+              Provide option to remind user when a deadline is coming up <br />
+              - Calendar view is provided for easier visualization <br />
+              - Provide analytics for assignments due that month and a pie chart
+              displayed to visualize workload of each class <br />
+              - Guest mode available for trial
+              <br />- All data saved in MySQL database
+            </div>
+          </div>
+        ),
         image: dueoh_1,
         carouselImages: [dueoh_1, dueoh_2, dueoh_3, dueoh_4, dueoh_5, dueoh_6],
         websiteUrl: "None",
         sourceCodeUrl: "https://github.com/ghobind/DueOh",
-        languages: "Java / Javascript / HTML / CSS",
+        languages: "Java / Javascript / HTML / CSS / MySQL",
       },
 
       {
         name: "Parkour's Edge",
-        info: "Created a 3D game similar to Mirror's Edge. Do all sorts of cool stuff like wall jumping.",
+        info: (
+          <div>
+            <div className="mb-3">
+              Implemented a first person 3D game similar to Mirror's Edge. Do
+              all sorts of cool stuff like climbing walls and wall running.
+            </div>
+            <div className="modal-subheading">
+              Overview of how the app is used:
+            </div>
+            <div>
+              - Implemented 3 levels of play where the first level is the
+              tutorial <br />
+              - Directional arrow at the top of the screen to direct the player
+              to each checkpoint <br />
+              - Allow player to wall jump a certain height only after user has
+              built enough velocity <br />- Allow player to run alongside the
+              wall if approached at an angle and with sufficient velocity <br />
+              - Implemented obstacles like crevices, rotating security cameras
+              and laser mines player has to avoid <br />
+              - Radar at the bottom right of the screen will display security
+              cameras player should avoid when it's close enough
+              <br /> - Timer to keep track of record
+            </div>
+          </div>
+        ),
         image: parkour_start,
         carouselImages: [parkour_1, parkour_2, parkour_3, parkour_4, parkour_5],
         websiteUrl: "None",
@@ -173,7 +310,48 @@ export default function Projects() {
       },
       {
         name: "Pac Man",
-        info: "Utilized A* search to find shortest path to current position of Pacman",
+        info: (
+          <div>
+            <div className="mb-3">
+              Remake of classic Pacman game utilizing A* search to find shortest
+              path for 4 ghost AIs to Pacman. If the ghosts touch Pacman, the
+              game is lost. If Pacman manages to collect all yellow orbs, Pacman
+              wins.
+            </div>
+            <div className="modal-subheading">
+              Overview of how the app is used:
+            </div>
+            <div>
+              <div>- Ghosts have 4 states</div>
+              <div>
+                Scatter: <br />- Each ghost will find the shortest path to the 4
+                corners of the map (image 1) <br />- All ghosts will initially
+                be in this state <br /> - Will return to this state from
+                frightened state after some time
+              </div>
+              <div>
+                Chase: <br />- Will chase after Pacman after Scatter state is
+                completed <br />
+                - Will lock on to different locations of Pacman (image 2) <br />
+                - e.g. current position, previous 2 positions, predicted
+                position
+              </div>
+              <div>
+                Frightened: <br /> - Pacman can eat power orbs to make ghosts
+                frightened turning them blue (image 3) <br /> - When frightened,
+                ghosts will take move in random directions trying to avoid
+                Pacman <br />- In this state, Pacman is able to eat the ghost
+                which will turn them to Dead state (image 4) <br />- After some
+                time, ghosts will flash between blue and white indicating that
+                Frightened state is about to end
+              </div>
+              <div>
+                Dead: <br /> - Turn ghost into eyes which will cause the ghost
+                to go home (center) before returning to Scatter (image 4 & 5)
+              </div>
+            </div>
+          </div>
+        ),
         image: pacman,
         carouselImages: [pacman_1, pacman_2, pacman_3, pacman_4, pacman_5],
         websiteUrl: "None",
@@ -182,7 +360,23 @@ export default function Projects() {
       },
       {
         name: "Mario Kart",
-        info: "Play a replica of Mario Kart's famous Rainbow Bridge versus an AI",
+        info: (
+          <div>
+            <div className="mb-3">
+              Play a replica of Mario Kart's famous Rainbow Bridge versus an AI
+            </div>
+            <div className="modal-subheading">
+              Overview of how the app is used:
+            </div>
+            <div>
+              - Use arrow keys to move your kart <br />
+              - The AI will move in a set path <br />
+              - Overtaking the AI will update current standing from 2nd to 1st
+              (image 2) <br />- There are 4 laps to catch up to opponent (image
+              3)
+            </div>
+          </div>
+        ),
         image: mariokart,
         carouselImages: [mariokart_1, mariokart_2, mariokart_3],
         websiteUrl: "None",
@@ -193,7 +387,7 @@ export default function Projects() {
     [
       {
         name: "Personal Website",
-        info: "Created website to showcase resume",
+        info: "Created website to showcase more about myself and my projects",
         image: personal,
         carouselImages: [],
         websiteUrl: "https://anthonyghobind.com",
@@ -289,7 +483,7 @@ export default function Projects() {
           Click on any project to find out more
         </div>
         <div className="">
-          {data.map((row, index) => {
+          {data.map((row) => {
             return (
               <div className="row justify-content-center align-items-center my-3">
                 {row.map((project) => {
