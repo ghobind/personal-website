@@ -14,6 +14,7 @@ export default function ProjectModal({
   carouselImages,
   webLink,
   srcLink,
+  wireframeLink,
   tags,
 }) {
   return createPortal(
@@ -61,7 +62,9 @@ export default function ProjectModal({
             <div className="modal-text mb-3">{content}</div>
           </div>
         </Modal.Body>
-        {(webLink !== "None" || srcLink !== "None") && (
+        {(webLink !== "None" ||
+          srcLink !== "None" ||
+          wireframeLink !== "None") && (
           <Modal.Footer className="d-block text-left ml-3 pt-3 pb-3">
             {webLink !== "None" && (
               <a
@@ -73,15 +76,26 @@ export default function ProjectModal({
                 Website
               </a>
             )}
-
-            <a
-              className="footer-content"
-              href={srcLink}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Source Code
-            </a>
+            {srcLink !== "None" && (
+              <a
+                className="footer-content mr-4"
+                href={srcLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Source Code
+              </a>
+            )}
+            {wireframeLink !== "None" && (
+              <a
+                className="footer-content mr-4"
+                href={wireframeLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Wireframe
+              </a>
+            )}
           </Modal.Footer>
         )}
       </Modal>

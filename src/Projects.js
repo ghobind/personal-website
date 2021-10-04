@@ -53,6 +53,7 @@ export default function Projects() {
   const [carouselImages, setCarouselImages] = useState([]);
   const [webLink, setWebLink] = useState();
   const [srcLink, setSrcLink] = useState();
+  const [wireframeLink, setWireframeLink] = useState();
   const [tags, setTags] = useState();
 
   const data = [
@@ -96,6 +97,7 @@ export default function Projects() {
         carouselImages: [grocery_1, grocery_2, grocery_3, grocery_4],
         websiteUrl: "https://ghobind-grocery-checklist.netlify.app/",
         sourceCodeUrl: "https://github.com/ghobind/grocery-checklist",
+        wireframeUrl: "None",
         languages: "ReactJS / JavaScript / AJAX / jQuery / HTML / CSS",
       },
       {
@@ -154,6 +156,8 @@ export default function Projects() {
         ],
         websiteUrl: "None",
         sourceCodeUrl: "None",
+        wireframeUrl:
+          "https://www.figma.com/file/Z4YRkCgsumm78bnJ8JwktQ/iLearning-Platform-Tools?node-id=0%3A1",
         languages: "ReactJS / Node.js / JavaScript / AJAX ",
       },
       {
@@ -201,6 +205,7 @@ export default function Projects() {
         carouselImages: [x8_1, x8_2, x8_3, x8_4],
         websiteUrl: "None",
         sourceCodeUrl: "None",
+        wireframeUrl: "None",
         languages: "Swift / Xcode / iOS / Firebase",
       },
       {
@@ -236,6 +241,7 @@ export default function Projects() {
         carouselImages: [],
         websiteUrl: "None",
         sourceCodeUrl: "None",
+        wireframeUrl: "None",
         languages: "Java / JavaScript / AJAX / jQuery / HTML / CSS / MySQL",
       },
     ],
@@ -272,6 +278,7 @@ export default function Projects() {
         carouselImages: [dueoh_1, dueoh_2, dueoh_3, dueoh_4, dueoh_5, dueoh_6],
         websiteUrl: "None",
         sourceCodeUrl: "https://github.com/ghobind/DueOh",
+        wireframeUrl: "None",
         languages: "Java / Javascript / HTML / CSS / MySQL",
       },
 
@@ -306,6 +313,7 @@ export default function Projects() {
         carouselImages: [parkour_1, parkour_2, parkour_3, parkour_4, parkour_5],
         websiteUrl: "None",
         sourceCodeUrl: "None",
+        wireframeUrl: "None",
         languages: "C++",
       },
       {
@@ -356,6 +364,7 @@ export default function Projects() {
         carouselImages: [pacman_1, pacman_2, pacman_3, pacman_4, pacman_5],
         websiteUrl: "None",
         sourceCodeUrl: "None",
+        wireframeUrl: "None",
         languages: "C++",
       },
       {
@@ -381,6 +390,7 @@ export default function Projects() {
         carouselImages: [mariokart_1, mariokart_2, mariokart_3],
         websiteUrl: "None",
         sourceCodeUrl: "None",
+        wireframeUrl: "None",
         languages: "C++",
       },
     ],
@@ -392,6 +402,8 @@ export default function Projects() {
         carouselImages: [],
         websiteUrl: "https://anthonyghobind.com",
         sourceCodeUrl: "https://github.com/ghobind/personal-website",
+        wireframeUrl:
+          "https://www.figma.com/file/PQw9FScWmtnvA4iWU6A4dY/Personal-Website?node-id=0%3A1",
         languages: "ReactJS / HTML / CSS",
       },
       {
@@ -401,6 +413,7 @@ export default function Projects() {
         carouselImages: [],
         websiteUrl: "None",
         sourceCodeUrl: "https://github.com/ghobind/starforce-simulator",
+        wireframeUrl: "None",
         languages: "C++",
       },
     ],
@@ -419,6 +432,7 @@ export default function Projects() {
     carouselImages,
     webLink,
     srcLink,
+    wireframeLink,
     tags
   ) {
     setHeading(heading);
@@ -427,6 +441,7 @@ export default function Projects() {
     setCarouselImages(carouselImages);
     setWebLink(webLink);
     setSrcLink(srcLink);
+    setWireframeLink(wireframeLink);
     setTags(tags);
   }
 
@@ -437,6 +452,7 @@ export default function Projects() {
     carouselImages,
     websiteUrl,
     sourceCodeUrl,
+    wireframeUrl,
     languages
   ) {
     return (
@@ -451,6 +467,7 @@ export default function Projects() {
             carouselImages,
             websiteUrl,
             sourceCodeUrl,
+            wireframeUrl,
             languages
           );
         }}
@@ -475,6 +492,7 @@ export default function Projects() {
             carouselImages={carouselImages}
             webLink={webLink}
             srcLink={srcLink}
+            wireframeLink={wireframeLink}
             tags={tags}
           />
         )}
@@ -496,6 +514,7 @@ export default function Projects() {
                         project.carouselImages,
                         project.websiteUrl,
                         project.sourceCodeUrl,
+                        project.wireframeUrl,
                         project.languages
                       )}
                     </div>
