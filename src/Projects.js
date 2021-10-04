@@ -214,8 +214,10 @@ export default function Projects() {
           <div>
             <div className="mb-3">
               <div>
-                • Utilized Scrum with a team of 4 to make a website that
-                provided the value of portfolio stocks over time
+                • Managed a team of 4 utilizing Scrum to make a website that
+                tracks portfolio stock value of user by delegating realistic
+                goals and tasks to each member and made sure the team was on
+                track for completion within 5 sprints
               </div>
               <div>
                 • Leveraged HighCharts API to visualize and reflect real time
