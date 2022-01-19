@@ -8,17 +8,8 @@ export default function About() {
         <p className="my-3">
           Hello! <br />
           I'm currently a masters student studying Computer Science at
-          University of Southern California <br />
-          I'm also a Software Engineer Intern at{" "}
-          <a
-            className="highlight-text"
-            href="https://teamcal.ai/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Teamcal.Ai
-          </a>{" "}
           <br />
+          University of Southern California graduating in May 2022
         </p>
         <div className="wrapper">
           <div className="left-side">
@@ -39,7 +30,9 @@ export default function About() {
               <div>
                 Full Stack Web Development <br />
                 iOS Development <br />
-                UI/UX Design
+                UI/UX Design <br />
+                Artificial Intelligence <br />
+                Machine Learning
               </div>
             </div>
             <div>

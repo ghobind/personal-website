@@ -31,7 +31,7 @@ export default function Skills() {
             {skillItem(
               web,
               "Web Development",
-              "React, JavaScript, jQuery, PHP, HTML/CSS, Node.js, Firebase, SQL, Github, AWS, Heroku, Bootstrap, MaterialUI"
+              "React.js, JavaScript, jQuery, PHP, HTML/CSS, Node.js, Firebase, SQL, Github, AWS, Heroku, Bootstrap, MaterialUI"
             )}
           </div>
           <div className="w-100"></div>

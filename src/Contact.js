@@ -51,7 +51,7 @@ export default function Contact() {
           </a>
         </div>
       </div>
-      <div className="text-center">&copy; 2021 Anthony Ghobind</div>
+      <div className="text-center">&copy; 2022 Anthony Ghobind</div>
     </div>
   );
 }

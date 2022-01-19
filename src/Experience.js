@@ -16,19 +16,23 @@ export default function Experience() {
     <div className="mt-3 card-body-text">
       <ul>
         <li>
-          Integrate app to set up quick meetings into sidebar, teams or group
-          chat, and video conferencing of <strong>MS Teams</strong> using{" "}
-          <strong>PHP</strong> and <strong>JavaScript</strong>
+          Integrated app to set up quick meetings into sidebar, teams chat, and
+          video conferencing of MS Teams by applying PHP and JavaScript with
+          Google OAuth saving each user at least 3 minutes to set up each
+          meeting
         </li>
         <li>
-          Construct wireframe for MS Teams Integration features using{" "}
-          <strong>InVision</strong> and prototype design with{" "}
-          <strong>Adobe XD</strong>
+          Established wireframe for MS Teams Integration with InVision and
+          prototyped design with Adobe XD resulting in a clear goal and
+          increased productivity when implementing integration
         </li>
         <li>
-          Apply knowledge in <strong>jQuery</strong> and{" "}
-          <strong>JavaScript</strong> to identify and triage bugs in responsive
-          frontend web app
+          Revamped 90% of web app to become responsive to changes in screen
+          sizes to make app more mobile friendly
+        </li>
+        <li>
+          Triaged 7 bugs in responsive frontend app by applying knowledge in
+          JavaScript to mitigate user complaints
         </li>
       </ul>
     </div>
@@ -37,12 +41,15 @@ export default function Experience() {
     <div className="mt-3 card-body-text">
       <ul>
         <li>
-          Assist professor in lecture to teach GUI concepts to students using{" "}
-          <strong>JavaFX</strong> and grade assignments
+          Streamlined grading rubric and assisted professor in grading all
+          assignments within 5 days of submission
         </li>
-        <li>Hold one-on-one office hours to help students with assignments </li>
         <li>
-          Pinpoint ways to improve program’s user experience like considering
+          Guided more than 50 students with assignments through one-on-one
+          office hours and lab sessions in JavaFX
+        </li>
+        <li>
+          Pinpointed improvements in student’s programs to be inclusive of
           accessibility for people with disability
         </li>
       </ul>
@@ -52,8 +59,9 @@ export default function Experience() {
     <div className="mt-3 card-body-text">
       <ul>
         <li>
-          Developed automated unit tests using <strong>GTest</strong> to grade
-          all homework submissions more efficiently
+          Formulated automated unit tests through GTest to grade all homework
+          submissions more efficiently by reducing grading time by 6 hours per
+          assignment
         </li>
         <li>
           Co-led a lab session to go over course material and guide students
@@ -61,8 +69,9 @@ export default function Experience() {
         </li>
         <li>
           Held one-on-one tutoring sessions and drop-in office hours to help
-          students with debugging and labs, or help prepare for tests in
-          concepts such as inheritance, polymorphism, data structures, etc.
+          more than 60 students with debugging and labs, or help prepare for
+          tests in concepts such as inheritance, polymorphism, data structures,
+          etc.
         </li>
       </ul>
     </div>
@@ -100,13 +109,13 @@ export default function Experience() {
       <Timeline position="alternate">
         {displayCard(
           "Software Engineer Intern at Teamcal.Ai",
-          "August 2021 - Present",
+          "August 2021 - December 2021",
           "Mountain View, CA",
           firstItemText
         )}
         {displayCard(
           "Teaching Assistant for Graphical User Interfaces",
-          "August 2020 - Present",
+          "August 2020 - December 2021",
           "Los Angeles , CA",
           secondItemText
         )}
