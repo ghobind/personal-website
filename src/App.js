@@ -10,13 +10,6 @@ import Skills from "./Skills";
 import Experience from "./Experience";
 
 function App() {
-  window.dataLayer = window.dataLayer || [];
-  function gtag() {
-    dataLayer.push(arguments);
-  }
-  gtag("js", new Date());
-
-  gtag("config", "G-MQE9H3DY04");
   return (
     <Router>
       <div className="">

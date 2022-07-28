@@ -24,14 +24,14 @@ export default function Skills() {
             {skillItem(
               code,
               "Programming Languages",
-              "C/C++, Java, Python, JavaFX"
+              "Python, C/C++, Java, TypeScript, JavaFX"
             )}
           </div>
           <div className="col-sm text-center offset-sm-1 pb-3">
             {skillItem(
               web,
               "Web Development",
-              "React.js, JavaScript, jQuery, PHP, HTML/CSS, Node.js, Firebase, SQL, Github, AWS, Heroku, Bootstrap, MaterialUI"
+              "React.js, Angular, Node.js, JavaScript, jQuery, PHP, HTML/CSS, Firebase, SQL, Github, AWS, Heroku, Bootstrap, MaterialUI"
             )}
           </div>
           <div className="w-100"></div>
@@ -39,7 +39,7 @@ export default function Skills() {
             {skillItem(
               appstore,
               "iOS Development",
-              "Swift, Firebase, Google Maps API, MapKit, Google SignIn"
+              "Swift, Firebase, Google Maps API, WebKit, MapKit, Google SignIn"
             )}
           </div>
           <div className="col-sm text-center offset-sm-1">

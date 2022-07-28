@@ -23,15 +23,15 @@ export default function Experience() {
         </li>
         <li>
           Established wireframe for MS Teams Integration with InVision and
-          prototyped design with Adobe XD resulting in a clear goal and
-          increased productivity when implementing integration
+          prototyped design with Adobe XD resulting in a clear vision when
+          implementing integration
         </li>
         <li>
           Revamped 90% of web app to become responsive to changes in screen
           sizes to make app more mobile friendly
         </li>
         <li>
-          Triaged 7 bugs in responsive frontend app by applying knowledge in
+          Triaged 7 bugs within 1 week in frontend app by applying knowledge in
           JavaScript to mitigate user complaints
         </li>
       </ul>
@@ -41,16 +41,16 @@ export default function Experience() {
     <div className="mt-3 card-body-text">
       <ul>
         <li>
-          Streamlined grading rubric and assisted professor in grading all
-          assignments within 5 days of submission
+          Streamlined grading rubric and wrote Python scripts to accelerate
+          grading assignments within 5 days
         </li>
         <li>
           Guided more than 50 students with assignments through one-on-one
           office hours and lab sessions in JavaFX
         </li>
         <li>
-          Pinpointed improvements in student’s programs to be inclusive of
-          accessibility for people with disability
+          Pinpointed improvements including audio cues of student’s programs to
+          be accessible for people with disability
         </li>
       </ul>
     </div>
