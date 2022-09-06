@@ -12,6 +12,26 @@ import React from "react";
 import { Card } from "react-bootstrap";
 
 export default function Experience() {
+  const zeroItemText = (
+    <div className="mt-3 card-body-text">
+      <ul>
+        <li>
+          Automated cancellation fees by parsing receipts from third-party
+          companies and directly entering to customer’s fee summary which saved
+          the company at least $150 each time fees were missed when it was done
+          manually
+        </li>
+        <li>
+          Ported Coldfusion SQL query to Node.js endpoints to make code more
+          readable for future developers
+        </li>
+        <li>
+          Involved in redesigning CRM frontend to become more user-friendly
+          using custom framework similar to React
+        </li>
+      </ul>
+    </div>
+  );
   const firstItemText = (
     <div className="mt-3 card-body-text">
       <ul>
@@ -88,12 +108,8 @@ export default function Experience() {
           <Card variant="outlined">
             <CardContent className="card-body-color text-left">
               <div className="card-body-header">{header}</div>
-              <div className="row">
-                <div className="col text-muted card-body-subheader">{date}</div>
-                <div className="col text-right card-body-subheader">
-                  {location}
-                </div>
-              </div>
+              <div className="text-muted card-body-subheader">{date}</div>
+              <div className="card-body-subheader">{location}</div>
               {text}
             </CardContent>
           </Card>
@@ -108,6 +124,12 @@ export default function Experience() {
 
       <Timeline position="alternate">
         {displayCard(
+          "Software Engineer II at Amerisave",
+          "August 2022 - Present",
+          "Los Angeles, CA",
+          zeroItemText
+        )}
+        {displayCard(
           "Software Engineer Intern at Teamcal.Ai",
           "August 2021 - December 2021",
           "Mountain View, CA",
@@ -116,7 +138,7 @@ export default function Experience() {
         {displayCard(
           "Teaching Assistant for Graphical User Interfaces",
           "August 2020 - December 2021",
-          "Los Angeles , CA",
+          "Los Angeles, CA",
           secondItemText
         )}
         {displayCard(

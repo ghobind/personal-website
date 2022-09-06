@@ -24,14 +24,14 @@ export default function Skills() {
             {skillItem(
               code,
               "Programming Languages",
-              "Python, C/C++, Java, TypeScript, JavaFX"
+              "Python, C/C++, Java, JavaFX"
             )}
           </div>
           <div className="col-sm text-center offset-sm-1 pb-3">
             {skillItem(
               web,
               "Web Development",
-              "React.js, Angular, Node.js, JavaScript, jQuery, PHP, HTML/CSS, Firebase, SQL, Github, AWS, Heroku, Bootstrap, MaterialUI"
+              "React.js, Angular, Node.js, Typescript, JavaScript, jQuery, PHP, HTML/CSS, Firebase, SQL, Github, AWS, Heroku, Bootstrap, MaterialUI"
             )}
           </div>
           <div className="w-100"></div>
