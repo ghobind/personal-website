@@ -1,4 +1,9 @@
 import React, { useState } from "react";
+import stocksearch from "./assets/projects/stocksearch/stocksearch.png";
+import stocksearch_1 from "./assets/projects/stocksearch/success_search.png";
+import stocksearch_2 from "./assets/projects/stocksearch/watchlist.png";
+import stocksearch_3 from "./assets/projects/stocksearch/portfolio.png";
+import teapot from "./assets/projects/teapot/teapot.png";
 import grocery from "./assets/projects/grocery.png";
 import sf_sim from "./assets/projects/sf_sim.png";
 import x8 from "./assets/projects/x8.jpeg";
@@ -58,6 +63,74 @@ export default function Projects() {
 
   const data = [
     [
+      {
+        name: "Stock Search Web & iOS",
+        info: (
+          <div>
+            <div className="mb-3">
+              <div>
+                • Deployed responsive autocomplete stock search tool in Angular
+                with simulated real-time trading including watchlist and
+                portfolio enabled users to keep track of trades and current
+                market trends in favorited companies
+              </div>
+              <div>
+                • Displayed summary, news, charts, and insights on successful
+                search to help users make informed decision
+              </div>
+              <div>
+                • Employed GCP and Node.js to return modified necessary data
+                retrieved from 9 Finnhub API calls to frontend
+              </div>
+              <div>
+                • Provided support for iOS written in Swift using SwiftUI and
+                WebKit for clean UI and engaged 3 rd party libraries like
+                Alamofire and SwiftyJSON to make AJAX calls to backend provided
+                through GCP and Node.js
+              </div>
+            </div>
+          </div>
+        ),
+        image: stocksearch,
+        carouselImages: [
+          stocksearch,
+          stocksearch_1,
+          stocksearch_2,
+          stocksearch_3,
+        ],
+        websiteUrl:
+          "https://csci571-hw8-ghobind-frontend.uw.r.appspot.com/search/home",
+        sourceCodeUrl: "None",
+        wireframeUrl: "None",
+        languages: "Angular / Node.js / GCP / Swift",
+      },
+      {
+        name: "Teapot Rendering",
+        info: (
+          <div>
+            <div className="mb-3">
+              <div>
+                • Utilized Pygame to adhere to 6 keyboard inputs in x, y, and z
+                directions for rendering at different angles
+              </div>
+              <div>
+                • Applied Phong shading and antialiasing using NumPy matrices to
+                create smooth teapot with minimal pixels
+              </div>
+              <div>
+                • Incorporated texture mapping to allow for unique images to be
+                mapped onto surface of teapot
+              </div>
+            </div>
+          </div>
+        ),
+        image: teapot,
+        carouselImages: [teapot],
+        websiteUrl: "None",
+        sourceCodeUrl: "None",
+        wireframeUrl: "None",
+        languages: "Python",
+      },
       {
         name: "Grocery Checklist",
         info: (
@@ -160,54 +233,8 @@ export default function Projects() {
           "https://www.figma.com/file/Z4YRkCgsumm78bnJ8JwktQ/iLearning-Platform-Tools?node-id=0%3A1",
         languages: "ReactJS / Node.js / JavaScript / AJAX ",
       },
-      {
-        name: "X8 Clothing iOS App",
-        info: (
-          <div>
-            <div className="mb-3">
-              <div>
-                • Prototyped an iOS application using Swift to display inventory
-                of X8, a clothing brand based in Indonesia
-              </div>
-              <div>
-                • Utilized Firebase to store user information and their
-                favorited items
-              </div>
-              <div>
-                • Integrated Google Maps into the application as part of a Store
-                Locator feature
-              </div>
-            </div>
-            <div className="modal-subheading">
-              Overview of how the app is used:
-            </div>
-            <div>
-              There are 4 sections of the app:
-              <br />
-              Home: <br />- Allow user to explore X8's current inventory which
-              is pulled from Firebase <br /> - Tapping "New Arrival" will bring
-              the user to a different view, showing a table of all the current
-              products of X8 <br />
-              - Each item has a heart on the top right corner to allow user to
-              "Wishlist" that item <br />
-              Wishlist: <br /> - This section contains all the clothing that the
-              current user has wishlisted <br />
-              Store Locator: <br /> - Made use of GoogleMaps to display all
-              current locations of X8 stores <br />- Identifies the closest
-              store to the user <br />
-              Profile: <br />
-              - Prompts user to login/sign up in order to make full use of the
-              app <br />
-            </div>
-          </div>
-        ),
-        image: x8,
-        carouselImages: [x8_1, x8_2, x8_3, x8_4],
-        websiteUrl: "None",
-        sourceCodeUrl: "None",
-        wireframeUrl: "None",
-        languages: "Swift / Xcode / iOS / Firebase",
-      },
+    ],
+    [
       {
         name: "Stock Portfolio Management",
         info: (
@@ -246,8 +273,6 @@ export default function Projects() {
         wireframeUrl: "None",
         languages: "Java / JavaScript / AJAX / jQuery / HTML / CSS / MySQL",
       },
-    ],
-    [
       {
         name: "DueOh",
         info: (
@@ -369,6 +394,8 @@ export default function Projects() {
         wireframeUrl: "None",
         languages: "C++",
       },
+    ],
+    [
       {
         name: "Mario Kart",
         info: (
@@ -395,8 +422,6 @@ export default function Projects() {
         wireframeUrl: "None",
         languages: "C++",
       },
-    ],
-    [
       {
         name: "Personal Website",
         info: "Created website to showcase more about myself and my projects",
@@ -417,6 +442,54 @@ export default function Projects() {
         sourceCodeUrl: "https://github.com/ghobind/starforce-simulator",
         wireframeUrl: "None",
         languages: "C++",
+      },
+      {
+        name: "X8 Clothing iOS App",
+        info: (
+          <div>
+            <div className="mb-3">
+              <div>
+                • Prototyped an iOS application using Swift to display inventory
+                of X8, a clothing brand based in Indonesia
+              </div>
+              <div>
+                • Utilized Firebase to store user information and their
+                favorited items
+              </div>
+              <div>
+                • Integrated Google Maps into the application as part of a Store
+                Locator feature
+              </div>
+            </div>
+            <div className="modal-subheading">
+              Overview of how the app is used:
+            </div>
+            <div>
+              There are 4 sections of the app:
+              <br />
+              Home: <br />- Allow user to explore X8's current inventory which
+              is pulled from Firebase <br /> - Tapping "New Arrival" will bring
+              the user to a different view, showing a table of all the current
+              products of X8 <br />
+              - Each item has a heart on the top right corner to allow user to
+              "Wishlist" that item <br />
+              Wishlist: <br /> - This section contains all the clothing that the
+              current user has wishlisted <br />
+              Store Locator: <br /> - Made use of GoogleMaps to display all
+              current locations of X8 stores <br />- Identifies the closest
+              store to the user <br />
+              Profile: <br />
+              - Prompts user to login/sign up in order to make full use of the
+              app <br />
+            </div>
+          </div>
+        ),
+        image: x8,
+        carouselImages: [x8_1, x8_2, x8_3, x8_4],
+        websiteUrl: "None",
+        sourceCodeUrl: "None",
+        wireframeUrl: "None",
+        languages: "Swift / Xcode / iOS / Firebase",
       },
     ],
   ];
