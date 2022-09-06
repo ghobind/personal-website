@@ -285,7 +285,9 @@ body {
 .close {
   display: none;
 }
-
+.highlight-link-modal {
+  color: rgba(24, 143, 255, 0.35);
+}
 /**END: Projects */
 
 /** START: Contact */

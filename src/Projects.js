@@ -59,6 +59,7 @@ export default function Projects() {
   const [webLink, setWebLink] = useState();
   const [srcLink, setSrcLink] = useState();
   const [wireframeLink, setWireframeLink] = useState();
+  const [videoLink, setVideoLink] = useState();
   const [tags, setTags] = useState();
 
   const data = [
@@ -68,6 +69,9 @@ export default function Projects() {
         info: (
           <div>
             <div className="mb-3">
+              <div className="highlight-link-modal">
+                Links below are for website and video for iOS app
+              </div>
               <div>
                 • Deployed responsive autocomplete stock search tool in Angular
                 with simulated real-time trading including watchlist and
@@ -102,6 +106,7 @@ export default function Projects() {
           "https://csci571-hw8-ghobind-frontend.uw.r.appspot.com/search/home",
         sourceCodeUrl: "None",
         wireframeUrl: "None",
+        videoUrl: "https://www.youtube.com/watch?v=hQMIyPR5Uz4",
         languages: "Angular / Node.js / GCP / Swift",
       },
       {
@@ -129,6 +134,7 @@ export default function Projects() {
         websiteUrl: "None",
         sourceCodeUrl: "None",
         wireframeUrl: "None",
+        videoUrl: "None",
         languages: "Python",
       },
       {
@@ -171,6 +177,7 @@ export default function Projects() {
         websiteUrl: "https://ghobind-grocery-checklist.netlify.app/",
         sourceCodeUrl: "https://github.com/ghobind/grocery-checklist",
         wireframeUrl: "None",
+        videoUrl: "None",
         languages: "ReactJS / JavaScript / AJAX / jQuery / HTML / CSS",
       },
       {
@@ -231,6 +238,7 @@ export default function Projects() {
         sourceCodeUrl: "None",
         wireframeUrl:
           "https://www.figma.com/file/Z4YRkCgsumm78bnJ8JwktQ/iLearning-Platform-Tools?node-id=0%3A1",
+        videoUrl: "None",
         languages: "ReactJS / Node.js / JavaScript / AJAX ",
       },
     ],
@@ -271,6 +279,7 @@ export default function Projects() {
         websiteUrl: "None",
         sourceCodeUrl: "None",
         wireframeUrl: "None",
+        videoUrl: "None",
         languages: "Java / JavaScript / AJAX / jQuery / HTML / CSS / MySQL",
       },
       {
@@ -306,6 +315,7 @@ export default function Projects() {
         websiteUrl: "None",
         sourceCodeUrl: "https://github.com/ghobind/DueOh",
         wireframeUrl: "None",
+        videoUrl: "None",
         languages: "Java / Javascript / HTML / CSS / MySQL",
       },
 
@@ -341,6 +351,7 @@ export default function Projects() {
         websiteUrl: "None",
         sourceCodeUrl: "None",
         wireframeUrl: "None",
+        videoUrl: "None",
         languages: "C++",
       },
       {
@@ -392,6 +403,7 @@ export default function Projects() {
         websiteUrl: "None",
         sourceCodeUrl: "None",
         wireframeUrl: "None",
+        videoUrl: "None",
         languages: "C++",
       },
     ],
@@ -420,6 +432,7 @@ export default function Projects() {
         websiteUrl: "None",
         sourceCodeUrl: "None",
         wireframeUrl: "None",
+        videoUrl: "None",
         languages: "C++",
       },
       {
@@ -431,6 +444,7 @@ export default function Projects() {
         sourceCodeUrl: "https://github.com/ghobind/personal-website",
         wireframeUrl:
           "https://www.figma.com/file/PQw9FScWmtnvA4iWU6A4dY/Personal-Website?node-id=0%3A1",
+        videoUrl: "None",
         languages: "ReactJS / HTML / CSS",
       },
       {
@@ -441,6 +455,7 @@ export default function Projects() {
         websiteUrl: "None",
         sourceCodeUrl: "https://github.com/ghobind/starforce-simulator",
         wireframeUrl: "None",
+        videoUrl: "None",
         languages: "C++",
       },
       {
@@ -489,6 +504,7 @@ export default function Projects() {
         websiteUrl: "None",
         sourceCodeUrl: "None",
         wireframeUrl: "None",
+        videoUrl: "None",
         languages: "Swift / Xcode / iOS / Firebase",
       },
     ],
@@ -508,6 +524,7 @@ export default function Projects() {
     webLink,
     srcLink,
     wireframeLink,
+    videoLink,
     tags
   ) {
     setHeading(heading);
@@ -517,6 +534,7 @@ export default function Projects() {
     setWebLink(webLink);
     setSrcLink(srcLink);
     setWireframeLink(wireframeLink);
+    setVideoLink(videoLink);
     setTags(tags);
   }
 
@@ -528,6 +546,7 @@ export default function Projects() {
     websiteUrl,
     sourceCodeUrl,
     wireframeUrl,
+    videoUrl,
     languages
   ) {
     return (
@@ -543,6 +562,7 @@ export default function Projects() {
             websiteUrl,
             sourceCodeUrl,
             wireframeUrl,
+            videoUrl,
             languages
           );
         }}
@@ -568,6 +588,7 @@ export default function Projects() {
             webLink={webLink}
             srcLink={srcLink}
             wireframeLink={wireframeLink}
+            videoLink={videoLink}
             tags={tags}
           />
         )}
@@ -590,6 +611,7 @@ export default function Projects() {
                         project.websiteUrl,
                         project.sourceCodeUrl,
                         project.wireframeUrl,
+                        project.videoUrl,
                         project.languages
                       )}
                     </div>

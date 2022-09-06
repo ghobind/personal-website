@@ -15,6 +15,7 @@ export default function ProjectModal({
   webLink,
   srcLink,
   wireframeLink,
+  videoLink,
   tags,
 }) {
   return createPortal(
@@ -94,6 +95,16 @@ export default function ProjectModal({
                 rel="noopener noreferrer"
               >
                 Wireframe
+              </a>
+            )}
+            {videoLink !== "None" && (
+              <a
+                className="footer-content mr-4"
+                href={videoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Video
               </a>
             )}
           </Modal.Footer>
